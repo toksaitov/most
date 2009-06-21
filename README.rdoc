@@ -62,8 +62,8 @@ The preferred method of the Most installation is through
 the Gem file. For this you will need to have RubyGems installed.
 If you have it, then you can install the system in the following way:
 
-* gem install most
-* gem install most --include-dependencies
+    gem install most
+    gem install most --include-dependencies
 
 Not that you must have correspondent account privileges
 on your system in order to use this commands.
@@ -84,7 +84,7 @@ consider to read documentation provided with each interface implementation.
 To get access to the core interface of the system you need to call
 the +init+ method first:
 
-    require \‘most\’
+    require ‘most‘
 
     most_controller = Most.init
 
@@ -95,15 +95,15 @@ testing system.
 === Configuration
 
 The default path for the configuration files is <em>.most</em> directory under
-the system user\’s home folder.
+the system user‘s home folder.
 
 === Command Line Usage
 
 The list of command line options can be found in the system documentation
 or it can be obtained from the Most executable by one of the following calls:
 
-	most -h
-	most \--help
+    most -h
+    most --help
 
 == Development
 
