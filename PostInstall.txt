@@ -1,1 +1,6 @@
-For more information on Most [Core], see http:/85.17.184.9/most
+Thank you for installing the Most system
+
+Please be sure to read README.rdoc and History.rdoc
+for useful information about this release.
+
+For more information on Most, see http:/85.17.184.9/most

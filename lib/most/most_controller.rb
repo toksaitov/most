@@ -1,3 +1,3 @@
 class MostController
-  #Code here
+  # TODO - the main controller
 end

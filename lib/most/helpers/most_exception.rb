@@ -4,4 +4,6 @@ class MostException
   def initialize(message = "An empty exception instance")
     @message = message.to_s
   end
+
+  # TODO - the default exception
 end

@@ -1,14 +1,14 @@
-= Most [Core]
+= Most, the Core
 
 == Description
 
 Most is a simple academic modular open software tester.
 
-Most [Core] is the main part of the system. Most provides
+Most, the Core is the main part of the system. Most provides
 the environment and interface bridges for modules that will
 implement the basic functionality of the testing system.
 
-In general Most [Core] consists form two main interfaces:
+In general Most, the Core consists form two main interfaces:
 the connector and the tester.
 
 The connector interface offers the basic bridge to make
@@ -18,7 +18,7 @@ it can be a module which will set up a server providing a network
 access for end users.
 
 The tester interface allows building an implementation of
-the software validator. By default the Most [Core] ships with
+the software validator. By default the Most ships with
 the tester compliant with the ICPC Validator Standard. The Most system
 proposes to implement a testing system following this standard, but
 it is not obligatory. The 3-rd party implementation can vary
@@ -38,7 +38,7 @@ notes for the list of supplied modules.
 
 == Features:
 
-
+* In development...
 
 == Requirements
 
@@ -58,7 +58,7 @@ notes for the list of supplied modules.
 
 === Gem Installation
 
-The preferred method of the Most [Core] installation is through
+The preferred method of the Most installation is through
 the Gem file. For this you will need to have RubyGems installed.
 If you have it, then you can install the system in the following way:
 
@@ -71,11 +71,11 @@ on your system in order to use this commands.
 For other software bundles (including links for the source code packages)
 consider visiting the official page of the project.
 
-* #{url}
+* http://85.17.184.9/most
 
 == Synopsis
 
-Most [Core] can be used as a standalone command line application
+Most can be used as a standalone command line application
 or as a library. Due to the modular nature of the system please
 consider to read documentation provided with each interface implementation.
 
@@ -84,7 +84,7 @@ consider to read documentation provided with each interface implementation.
 To get access to the core interface of the system you need to call
 the +init+ method first:
 
-	require ‘most’
+    require \‘most\’
 
     most_controller = Most.init
 
@@ -94,8 +94,8 @@ testing system.
 
 === Configuration
 
-The default path for the configuration files is _.most_ directory under
-the system user’s home folder.
+The default path for the configuration files is <em>.most</em> directory under
+the system user\’s home folder.
 
 === Command Line Usage
 
@@ -103,29 +103,29 @@ The list of command line options can be found in the system documentation
 or it can be obtained from the Most executable by one of the following calls:
 
 	most -h
-	most --help
+	most \--help
 
 == Development
 
 === Source Repositories
 
-Most [Core] is currently hosted at RubyForge and GitHub.
+Most is currently hosted at RubyForge and GitHub.
 
 The RubyForge page is
-* http://rubyforge.org/projects/#{project_name}
+* http://rubyforge.org/projects/most
 
 The github web page is
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/tda/most
 
 The public git clone URL is
-* http://github.com/#{github_username}/#{project_name}.git
-
-http://rubyforge.org/projects/most/
+* http://github.com/tda/most.git
 
 == Additional Information
 
-Author:: Dmitriy Toksaitov <toksaitov.d@gmail.com>
-Forum:: 
+Author:: Toksaitov Dmitriy Alexandrovich <toksaitov.d@gmail.com>
+
+Project web site:: http://85.17.184.9/most
+Project forum:: http://groups.google.com/group/most-system
 
 == License
 
@@ -145,4 +145,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+along with this program.  If not, see <http://www.gnu.org/licenses>.

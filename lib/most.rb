@@ -8,11 +8,11 @@ require_all File.dirname(__FILE__) + '/most'
 
   Most is a simple academic modular open software tester.
 
-  Most [Core] is the main part of the system. Most provides
+  Most is the main part of the system. Most provides
   the environment and interface bridges for modules that will
   implement the basic functionality of the testing system.
 
-  In general Most [Core] consists form two main interfaces:
+  In general Most consists form two main interfaces:
   the connector and the tester.
 
   The connector interface offers the basic bridge to make
@@ -22,7 +22,7 @@ require_all File.dirname(__FILE__) + '/most'
   access for end users.
 
   The tester interface allows building an implementation of
-  the software validator. By default the Most [Core] ships with
+  the software validator. By default the Most ships with
   the tester compliant with the ICPC Validator Standard. The Most system
   proposes to implement a testing system following this standard, but
   it is not obligatory. The 3-rd party implementation can vary
@@ -45,7 +45,7 @@ module Most
   # General information
 
   # The name of the application
-  FULL_NAME = 'Most [Core]'
+  FULL_NAME = 'Most, the Core'
 
   # The unix name of the application
   UNIX_NAME = 'most'
@@ -65,7 +65,7 @@ module Most
   #
   # Most.init -> a new instance of the MostController class
   #
-  #   The <code>init</code> method must be used directly before
+  #   The +init+ method must be used directly before
   #   any other methods if the the application is used as a library.
   #
   #   If an attempt to use the application is made without the proper
@@ -79,6 +79,6 @@ module Most
   #
   
   def self.init
-    return MostCroller.new
+    # TODO - the initialization of the system
   end
 end
