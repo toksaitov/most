@@ -65,7 +65,7 @@ If you have it, then you can install the system in the following way:
     gem install most
     gem install most --include-dependencies
 
-Not that you must have correspondent account privileges
+Note that you must have correspondent account privileges
 on your system in order to use this commands.
 
 For other software bundles (including links for the source code packages)
@@ -94,7 +94,7 @@ testing system.
 
 === Configuration
 
-The default path for the configuration files is <em>.most</em> directory under
+The default path for the configuration files is the <em>.most</em> directory under
 the system user's home folder.
 
 === Command Line Usage
