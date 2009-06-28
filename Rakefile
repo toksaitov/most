@@ -1,6 +1,12 @@
 require 'rubygems' unless ENV['NO_RUBYGEMS']
 
-%w[rake rake/clean fileutils newgem rubigen].each { |f| require f }
+require 'rake'
+require 'rake/clean'
+
+require 'fileutils'
+
+require 'newgem'
+require 'rubigen'
 
 require File.dirname(__FILE__) + '/lib/most'
 
@@ -37,7 +43,7 @@ end
 
 # Load /tasks/*.rake
 require 'newgem/tasks'
-Dir['tasks/**/*.rake'].each { |t| load t }
+# Dir['tasks/**/*.rake'].each { |t| load t }
 
 # TODO - want other tests/tasks run by default? Add them to the list
 # task :default => [:spec, :features]

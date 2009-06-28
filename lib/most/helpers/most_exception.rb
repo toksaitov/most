@@ -1,9 +1,9 @@
-class MostException
-  attr_reader :message
+require 'most_values'
 
-  def initialize(message = "An empty exception instance")
-    @message = message.to_s
+module Most
+  class MostException < Exception
+    def initialize()
+      super(MostValues.MostStrings.DEFAULT_MESSAGE)
+    end
   end
-
-  # TODO - the default exception
 end

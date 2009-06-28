@@ -1,11 +1,4 @@
-$:.unshift(File.dirname(__FILE__)) unless
-  $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
-
-require "require_all"
-require_all File.dirname(__FILE__) + '/most'
-
 =begin
-
   Most is a simple academic modular open software tester.
 
   Most is the main part of the system. Most provides
@@ -32,15 +25,21 @@ require_all File.dirname(__FILE__) + '/most'
   interface classes provided by the Most system to extend
   the functionality of the modules. For example the implementation of
   the connector interface in the form of the network server can build
-  a tunnel interface bridge, so that developers can make implementations, 
+  a tunnel interface bridge, so that developers can make implementations,
   for example, of a SSH tunnel in order to provide a secure connection
   with the testing system.
 
   The default system bundle is shipped with a number of basic interface
   implementations (modules). Please, consider to take a look on the realize notes
   for the list of supplied modules.
-
 =end
+
+$:.unshift(File.dirname(__FILE__)) unless
+  $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
+
+require "require_all"
+require_all File.dirname(__FILE__) + '/most'
+
 module Most
   # General information
 
