@@ -84,21 +84,21 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses>.
 =end
 
+require File.expand_path(File.dirname(__FILE__) + "/../most")
+
 require 'optparse'
 require 'ostruct'
-
-require 'rdoc/usage'
 
 require 'date'
 
 module Most
 
   class MostStarter
+    attr_reader :env
+
     attr_reader :stdin, :stdout, :arguments
 
     attr_reader :tasks, :options
-
-    attr_reader :config
 
     def initialize(stdin = STDIN, stdout = STDOUT, arguments = [])
       @stdin  = stdin
@@ -113,7 +113,7 @@ module Most
 
       @options = OpenStruct.new()
 
-      @options.config_file = Most::SPECS.default_config_path
+      @options.config_file = nil
       @options.additional_parameters = []
 
       @options.verbose = false
@@ -121,20 +121,22 @@ module Most
     end
 
     def execute()
-      if options_parsed?
-        perform_tasks()
+      @env = Most::MostEnv.new().init()
 
-        welcome_message = Most::LANG.exec_welcome_msg
-        @stdout.puts "#{welcome_message}: #{DateTime.now}." if @options.verbose
+      if @env
+        if options_parsed?()
+          perform_tasks()
 
-        Most::init().start_default_routine()
-        Most::halt()
+          welcome_message = @env.lang.exec_welcome_msg
+          @stdout.puts("#{welcome_message}: #{DateTime.now}.") if @options.verbose
 
-        end_message = Most::LANG.exec_end_msg
-        @stdout.puts "#{end_message}: #{DateTime.now}." if @options.verbose
-      else
-        output_version(); @stdout.puts "\n"
-        output_options()
+          # ToDo - main code
+
+          end_message = @env.lang.exec_end_msg
+          @stdout.puts("#{end_message}: #{DateTime.now}.") if @options.verbose
+        end
+
+        @env.halt()
       end
     end
 
@@ -145,97 +147,100 @@ module Most
       begin
         parser = OptionParser.new()
 
-        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:version_flag]
+        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:version_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) { @tasks.show_version = true }
 
-        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:help_flag]
+        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:help_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) { @tasks.show_help = true }
 
-        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:verbose_flag]
+        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:verbose_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do
           @options.verbose = true if !@options.quiet
         end
 
-        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:quiet_flag]
+        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:quiet_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do
           @options.quiet = true; @options.verbose = false
         end
 
-        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:parameter_flag]
+        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:parameter_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do |params|
           add_params(params)
         end
 
-        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:config_flag]
+        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:config_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do |path|
           change_config_path(path)
         end
-
+        
         parser.parse!(@arguments)
-      end rescue result = false
+      rescue Exception => e
+        @stdout.puts("#{@env.lang.exec_parse_failed_msg}, #{e.message}") if !@options.quiet
+        result = false
+      end
 
       return result
     end
 
     def perform_tasks()
       if @tasks.show_version
-        output_version()
-        exit(0)
+        output_version(); exit(0)
       end
       if @tasks.show_help
-        output_help()
-        exit(0)
+        output_help(); exit(0)
       end
     end
 
     def output_help()
-      @stdout.puts Most::LANG.exec_usage_msg + "\n\n"
+      @stdout.puts("#{@env.lang.exec_usage_msg}\n\n")
       output_options()
     end
     
     def output_version()
-      @stdout.puts "#{Most::FULL_NAME} (#{Most::UNIX_NAME}): - #{Most::VERSION}"
-      @stdout.puts Most::COPYRIGHT
+      @stdout.puts(@env.lang.exec_version_msg)
+      @stdout.puts(Most::COPYRIGHT)
     end
 
     def output_options()
-      @stdout.puts Most::LANG.exec_options_title
+      @stdout.puts(@env.lang.exec_options_title)
 
-      puts Most::SPECS.class::MOST_EXEC_OPTIONS
-      Most::SPECS::MOST_EXEC_OPTIONS.each do |name, options|
-        @stdout.puts "\n  #{options[2]}\n    #{options[0]}, #{options[1]}"
+      @env.specs.class::MOST_EXEC_OPTIONS.each do |name, options|
+        @stdout.puts("\n\t#{options[2]}\n\t\t#{options[0]}, #{options[1]}")
       end
     end
 
-    def add_params(params)
-      parts = params.split(':')
+    def add_params(params_string)
+      parts = params_string.split(':')
 
       param = ''; value = ''
       if (parts.length == 2) and
          (param = parts[0].strip()).length() > 0 and
-         (value = parts[1].strip()).length() > 0
+         (value = parts[1].strip()).length() > 0 then
         @options.additional_parameters << [param, value]
       else
         if !@options.quiet
-          error_msg = Most::LANG.exec_redef_err_msg
+          error_msg = @env.lang.exec_redef_err_msg
+          error_msg = @env.replacer.process(error_msg, {'<argument>' => params_string})
 
-          error_msg = error_msg.sub('<argument>', params)
+          options_def = @env.specs.class::MOST_EXEC_OPTIONS[:parameter_flag][1]
+          error_msg   = @env.replacer.process(error_msg, {'<correct_pattern>' => options_def})
 
-          options_def = Most::SPECS::MOST_EXEC_OPTIONS[:parameter_flag][1]
-          error_msg = error_msg.sub('<correct_pattern>', (options_def ? options_def : '""'))
-
-          @stdout.puts error_msg
+          @stdout.puts(error_msg)
         end
       end
     end
 
-    def change_config_path(path)
-      if File.exist?(path) and File.readable?(path)
-        @options.config_file = path.strip()
+    def change_config_path(path_string)
+      path_string.strip!()
+
+      if File.exist?(path_string) and File.readable?(path_string)
+        @options.config_file = path_string
       else
         if !@options.quiet
-          @stdout.puts Most::LANG.
-                  exec_incorrect_path_msg.sub('<path>', (path ? path : '""'))
+          error_msg = @env.lang.exec_incorrect_path_msg
+          error_msg = @env.replacer.process(error_msg, {'<path>' => path_string})
+
+          @stdout.puts(error_msg)
         end
       end
     end

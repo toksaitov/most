@@ -1,6 +1,7 @@
 class Object
   def serializable_fields
     @serializable_fields = [] if !@serializable_fields
+
     return @serializable_fields
   end
 
@@ -32,8 +33,8 @@ class Object
   def partially_serialize(io_stream, most_format_provider)
     if io_stream and most_format_provider
       srl_hash = {}
-      serializable_fields().each do |sym|
-        srl_hash[sym] = instance_variable_get("@#{sym}")
+      serializable_fields().each do |field_name|
+        srl_hash[field_name] = instance_variable_get("@#{field_name}")
       end
 
       io_stream.write(most_format_provider.to_format(srl_hash))
@@ -45,12 +46,13 @@ class Object
 
   def partially_deserialize(io_stream, most_format_provider)
     if most_format_provider and io_stream
-      deserialized_fields = most_format_provider.revert(io_stream.readlines().join("\n").to_s())
+      deserialized_fields =
+        most_format_provider.revert(io_stream.readlines().join("\n").to_s())
 
       if deserialized_fields
-        deserialized_fields.each do |sym_key, field|
-          if sym_key and field
-            instance_variable_set("@#{sym_key}", field)
+        deserialized_fields.each do |field_name, value|
+          if field_name and value
+            instance_variable_set("@#{field_name}", value)
           end
         end
       end

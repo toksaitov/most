@@ -40,7 +40,12 @@ abs_dir_name = File.expand_path(req_dir_name)
 $:.unshift(req_dir_name) unless
   $:.include?(req_dir_name) || $:.include?(abs_dir_name)
 
+require abs_dir_name + '/most/interfaces/most_haltable'
+require abs_dir_name + '/most/interfaces/most_initializable'
+
 require abs_dir_name + '/most/helpers/loggers/most_logger'
+
+require abs_dir_name + '/most/helpers/utilities/most_replacer'
 
 require abs_dir_name + '/most/helpers/formats/yaml_format_provider'
 
@@ -52,10 +57,10 @@ require abs_dir_name + '/most/most_controller'
 module Most
   # General information
 
-  # The name of the application
+  # The name of the system
   FULL_NAME = 'Most, the Core'
 
-  # The unix name of the application
+  # The unix name of the system
   UNIX_NAME = 'most'
 
   # The application version (rational versioning policy)
@@ -72,6 +77,9 @@ module Most
 
   # The copyright of the application
   COPYRIGHT = "Copyright (C) 2009 #{AUTHOR}"
+
+  # The path to the root data directory
+  DATA_ROOT_DIR_PATH = '~/'
 
   # The name of the root data directory
   DATA_ROOT_DIR = '.most'
@@ -93,93 +101,121 @@ module Most
   # The name of the initialization configuration file
   INIT_CONFIG_FILE_NAME = 'init_config.yml'
 
-  # Mandatory preparations
+  class MostEnv
+    include MostInitializable
+    include MostHaltable
 
-  # Check wether the data directories exist and creation of them if the process failed
-  if (!File.directory?(File.expand_path("~/#{DATA_ROOT_DIR}/")))
-    Dir.mkdir(File.expand_path("~/#{DATA_ROOT_DIR}/"))
-  end
+    attr_reader :instance
 
-  DIRS.each do |key, name|
-    if (!File.directory?(File.expand_path("~/#{DATA_ROOT_DIR}/#{name}")))
-      Dir.mkdir(File.expand_path("~/#{DATA_ROOT_DIR}/#{name}"))
+    attr_reader :format, :specs, :lang
+
+    attr_reader :replacer
+    attr_reader :logger
+
+    def init()
+      if !@instance
+        prepare_directories()
+
+        @replacer = prepare_replacer()
+
+        @format = Most::Helpers::Formats::YamlFormatProvider.new() if @replacer
+
+        @specs  = Most::Helpers::Values::MostSpecs.new(self, get_init_config_stream('r')) if @format
+        @lang   = Most::Helpers::Values::MostLang.new(self,  get_lang_file_stream('r'))   if @specs
+
+        @logger = Most::Helpers::Loggers::MostLogger.new(self, get_logger_config_stream('r')) if @lang
+
+        if @logger
+          @instance = self
+        end
+      end
+
+      return @instance
     end
-  end
 
-  # General fields
+    def halt()
+      if @instance
+        @specs.partially_serialize(get_init_config_stream('w'), @format)
+        @lang.partially_serialize(get_lang_file_stream('w'),    @format)
 
-  # The current default format of the configuration and other Most system files
-  FORMAT = Most::Helpers::Formats::YAMLFormatProvider.new()
+        @logger.partially_serialize(get_logger_config_stream('w'), @format)
+        @logger.halt()
 
-  # General data and specifications
-  init_conf_file_path =
-          File.expand_path("~/#{DATA_ROOT_DIR}/#{DIRS[:CONFIG_DIR]}/#{INIT_CONFIG_FILE_NAME}")
+        @instance = nil
+      end
+    end
 
-  if !File.exists?(init_conf_file_path)
-    init_conf_file_stream = File.open(init_conf_file_path, 'w+')
-  else
-    init_conf_file_stream = File.open(init_conf_file_path, 'r')
-  end
+    private
+    def prepare_directories()
+      main_data_root_path =
+        File.expand_path("#{Most::DATA_ROOT_DIR_PATH}/#{Most::DATA_ROOT_DIR}/")
 
-  SPECS = Most::Helpers::Values::MostSpecs.new(init_conf_file_stream)
+      if (!File.directory?(main_data_root_path))
+        Dir.mkdir(main_data_root_path)
+      end
 
-  # General purpose strings
-  langs_file_path = File.expand_path(SPECS.default_lang_path)
+      Most::DIRS.each do |dir_key, dir_name|
+        dir_full_path =
+          File.expand_path("#{Most::DATA_ROOT_DIR_PATH}/#{Most::DATA_ROOT_DIR}/#{dir_name}")
 
-  if !File.exists?(langs_file_path)
-    langs_file_stream = File.open(langs_file_path, 'w+')
-  else
-    langs_file_stream = File.open(langs_file_path, 'r')
-  end
+        if (!File.directory?(dir_full_path))
+          Dir.mkdir(dir_full_path)
+        end
+      end
+    end
 
-  LANG = Most::Helpers::Values::MostLang.new(langs_file_stream)
+    def get_init_config_stream(io_mode)
+      init_conf_file_path  = "#{Most::DATA_ROOT_DIR_PATH}/#{Most::DATA_ROOT_DIR}/"
+      init_conf_file_path += "#{Most::DIRS[:CONFIG_DIR]}/#{Most::INIT_CONFIG_FILE_NAME}"
 
-  # Logger used by the Most system
-  logger_conf_file_path = File.expand_path(SPECS.default_logger_config_path)
+      init_conf_file_path = File.expand_path(init_conf_file_path)
 
-  if !File.exists?(logger_conf_file_path)
-    logger_conf_file_stream = File.open(logger_conf_file_path, 'w+')
-  else
-    logger_conf_file_stream = File.open(logger_conf_file_path, 'r')
-  end
+      return get_file_stream(init_conf_file_path, io_mode)
+    end
 
-  LOGGER = Most::Helpers::Loggers::MostLogger.new(logger_conf_file_stream)
+    def get_lang_file_stream(io_mode)
+      lang_file_path = File.expand_path(@specs.default_lang_path)
 
-  #
-  # Most.init -> a new instance of the +MostController+ class
-  #
-  #   The +init+ method must be used directly before
-  #   any other methods if the the application is used as a library.
-  #
-  #   If an attempt to use the application is made without the proper
-  #   initialization (that is made by this method) an exception will be raised.
-  #
-  #   Returns a new instance of the MostController class.
-  #
-  #   Throws an correspondent exception if the initialization failed.
-  #
-  #     Most.init #=> MostController.new
-  #
-  
-  def self.init
-    return MostController.new()
-  end
+      return get_file_stream(lang_file_path, io_mode)
+    end
 
-  def self.halt
-    init_conf_file_path = "~/#{DATA_ROOT_DIR}/#{DIRS[:CONFIG_DIR]}/#{INIT_CONFIG_FILE_NAME}"
-    init_conf_file_stream = File.open(File.expand_path(init_conf_file_path), 'w')
+    def get_logger_config_stream(io_mode)
+      logger_conf_file_path = File.expand_path(@specs.default_logger_config_path)
 
-    SPECS.partially_serialize(init_conf_file_stream, Most::FORMAT)
+      return get_file_stream(logger_conf_file_path, io_mode)
+    end
 
-    langs_file_path = SPECS.default_lang_path
-    langs_file_stream = File.open(File.expand_path(langs_file_path), 'w')
+    def get_file_stream(expanded_file_path, requested_io_mode)
+      result = nil
 
-    LANG.partially_serialize(langs_file_stream, Most::FORMAT)
+      begin
+        if !File.exists?(expanded_file_path)
+          result = File.open(expanded_file_path, 'w+')
+        else
+          result = File.open(expanded_file_path, requested_io_mode)
+        end
+      end rescue
 
-    logger_conf_file_path = SPECS.default_logger_config_path
-    logger_conf_file_stream = File.open(File.expand_path(logger_conf_file_path), 'w')
+      return result
+    end
 
-    LOGGER.partially_serialize(logger_conf_file_stream, Most::FORMAT)
-    LOGGER.halt()
+    def prepare_replacer()
+      rules_hash = {}
+
+      Most.constants.each do |const_name|
+        curr_constant = Most.const_get(const_name)
+        if curr_constant.kind_of?(String)
+          rules_hash["<#{const_name.downcase()}>"] = curr_constant
+        end
+      end
+
+      Most::DIRS.each do |dir_key, dir_name|
+        rules_hash["<#{dir_key.to_s().downcase()}>"] = dir_name
+      end
+
+      result = Most::Helpers::Utilities::MostReplacer.new(rules_hash)
+
+      return result
+    end
   end
 end

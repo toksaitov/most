@@ -1,10 +1,16 @@
-require File.expand_path(File.dirname(__FILE__)) + '/most_serializer'
+req_dir_name = File.dirname(__FILE__)
+abs_dir_name = File.expand_path(req_dir_name)
+
+require abs_dir_name + '/alterers/most_serializer'
+
+require abs_dir_name + '/most_base'
 
 module Most
 
-  class MostController
-    def initialize
-      # ToDo - controller initialization
+  class MostController < MostBase
+    def initialize(env)
+      super(env)
+      
     end
     
     def start_default_routine()

@@ -2,7 +2,7 @@ module Most
   module Helpers
     module Formats
 
-      module MostFormatProvider
+      class MostFormatProvider
         def to_format() end
         def revert() end
       end

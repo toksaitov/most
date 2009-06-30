@@ -6,8 +6,7 @@ module Most
   module Helpers
     module Formats
       
-      class YAMLFormatProvider
-        include MostFormatProvider
+      class YamlFormatProvider < MostFormatProvider
 
         def to_format(data_string)
           return data_string.to_yaml()

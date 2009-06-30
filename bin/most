@@ -3,7 +3,6 @@
 #  Created on 2009-6-18.
 #  Copyright (C) 2009 Toksaitov Dmitriy Alexandrovich
 
-require File.expand_path(File.dirname(__FILE__) + "/../lib/most")
 require File.expand_path(File.dirname(__FILE__) + "/../lib/most/most_starter")
 
 Most::MostStarter.new(STDIN, STDOUT, ARGV).execute()
