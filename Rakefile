@@ -23,9 +23,6 @@ $hoe = Hoe.new(Most::UNIX_NAME, Most::VERSION) do |p|
   p.extra_deps = [
     ['activesupport','>= 2.0.2'],
   ]
-  p.extra_deps = [
-    ['require_all', '>= 1.0.0']
-  ]
   p.extra_dev_deps = [
     ['newgem', '>= 1.4.1']
   ]

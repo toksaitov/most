@@ -6,4 +6,4 @@
 require File.expand_path(File.dirname(__FILE__) + "/../lib/most")
 require File.expand_path(File.dirname(__FILE__) + "/../lib/most/most_starter")
 
-Most::MostStarter.execute(STDIN, STDOUT, ARGV)
+Most::MostStarter.new(STDIN, STDOUT, ARGV).execute()

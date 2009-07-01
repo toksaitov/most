@@ -91,49 +91,49 @@ require 'rdoc/usage'
 
 require 'date'
 
-require 'helpers/most_serializable'
-
-require 'helpers/most_values'
-
 module Most
-  class MostStarter < MostSerializable
+
+  class MostStarter
     attr_reader :stdin, :stdout, :arguments
 
-    attr_reader :options
+    attr_reader :tasks, :options
 
     attr_reader :config
 
     def initialize(stdin = STDIN, stdout = STDOUT, arguments = [])
-      super(nil, nil)
-
       @stdin  = stdin
       @stdout = stdout
 
       @arguments = arguments
 
+      @tasks = OpenStruct.new()
+
+      @tasks.show_version = false
+      @tasks.show_help = false
+
       @options = OpenStruct.new()
-      @options.show_version = false
-      @options.show_help = false
+
+      @options.config_file = Most::SPECS.default_config_path
+      @options.additional_parameters = []
+
       @options.verbose = false
       @options.quiet = false
-
-      @config = OpenStruct.new(); serializable(@config); deserialize()
-      @config.worker_name = "#{UNIX_NAME} #{DateTime.now().hash}" if @config.worker_name.nil?
     end
 
     def execute()
       if options_parsed?
-        process_arguments()
+        perform_tasks()
 
-        welcome_message = MostValues.MostStrings.MostExecution.WELCOME_MESSAGE
-        @stdout.puts "#{welcome_message} on #{DateTime.now}." if @options.verbose
+        welcome_message = Most::LANG.exec_welcome_msg
+        @stdout.puts "#{welcome_message}: #{DateTime.now}." if @options.verbose
 
-        init.start_default_routine()
+        Most::init().start_default_routine()
+        Most::halt()
 
-        end_message = MostValues.MostStrings.MostExecution.END_MESSAGE
-        @stdout.puts "#{end_message} on #{DateTime.now}" if @options.verbose
+        end_message = Most::LANG.exec_end_msg
+        @stdout.puts "#{end_message}: #{DateTime.now}." if @options.verbose
       else
-        output_version()
+        output_version(); @stdout.puts "\n"
         output_options()
       end
     end
@@ -142,75 +142,103 @@ module Most
     def options_parsed?()
       result = true
 
-      parser = OptionParser.new()
+      begin
+        parser = OptionParser.new()
 
-      options_def = OPTIONS[:version_flag]
-      parser.on(options_def[0], options_def[1], options_def[2]) { @options.show_version = true }
+        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:version_flag]
+        parser.on(options_def[0], options_def[1], options_def[2]) { @tasks.show_version = true }
 
-      options_def = OPTIONS[:help_flag]
-      parser.on(options_def[0], options_def[1], options_def[2]) { @options.show_help = true }
+        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:help_flag]
+        parser.on(options_def[0], options_def[1], options_def[2]) { @tasks.show_help = true }
 
-      options_def = OPTIONS[:verbose_flag]
-      parser.on(options_def[0], options_def[1], options_def[2]) { @options.verbose = true }
-
-      options_def = OPTIONS[:quiet_flag]
-      parser.on(options_def[0], options_def[1], options_def[2]) do
-        @options.quiet = true; @options.verbose = false
-      end
-
-      options_def = OPTIONS[:parameter_flag]
-      parser.on(options_def[0], options_def[1], options_def[2]) do |parameters|
-        parts = parameters.split(':')
-        if parts.length == 2 and parts[0] and parts[1]
-          @options.redefine_parameters = true;
-          @options.parameters_to_redefine << [parts[0].strip(), parts[1].strip()]
-        else
-          @stdout.puts
-            MostValues.MostStrings.MostExecution.
-                  REDEF_INCORRECT_MESSAGE.sub('<argument>', parameters).
-                                          sub('<correct_pattern>', options_def[1]) if !@options.quiet
+        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:verbose_flag]
+        parser.on(options_def[0], options_def[1], options_def[2]) do
+          @options.verbose = true if !@options.quiet
         end
-      end
 
-      options_def = OPTIONS[:config_flag]
-      parser.on(options_def[0], options_def[1], options_def[2]) do |path|
-        if File.exist?(path) and File.readable?(path)
-          @options.reload_config = true;
-          @options.config_path = path.strip()
-        else
-          @stdout.puts
-            MostValues.MostStrings.MostExecution.
-                  INCORRECT_PATH_MESSAGE.sub('<path>', path) if !@options.quiet
+        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:quiet_flag]
+        parser.on(options_def[0], options_def[1], options_def[2]) do
+          @options.quiet = true; @options.verbose = false
         end
-      end
 
-      parser.parse!(@arguments) rescue result = false
+        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:parameter_flag]
+        parser.on(options_def[0], options_def[1], options_def[2]) do |params|
+          add_params(params)
+        end
+
+        options_def = Most::SPECS.class::MOST_EXEC_OPTIONS[:config_flag]
+        parser.on(options_def[0], options_def[1], options_def[2]) do |path|
+          change_config_path(path)
+        end
+
+        parser.parse!(@arguments)
+      end rescue result = false
 
       return result
     end
 
-    def process_arguments()
-      # TO DO - place in local vars, etc
+    def perform_tasks()
+      if @tasks.show_version
+        output_version()
+        exit(0)
+      end
+      if @tasks.show_help
+        output_help()
+        exit(0)
+      end
     end
 
     def output_help()
-      RDoc::usage()
+      @stdout.puts Most::LANG.exec_usage_msg + "\n\n"
+      output_options()
     end
-
-    def output_usage()
-      RDoc::usage('usage')
-    end
-
+    
     def output_version()
-      puts "#{UNIX_NAME}: #{File.basename(__FILE__)} - #{VERSION}"
+      @stdout.puts "#{Most::FULL_NAME} (#{Most::UNIX_NAME}): - #{Most::VERSION}"
+      @stdout.puts Most::COPYRIGHT
     end
 
     def output_options()
-      puts MostValues.MostStrings.MostExecution.OPTIONS_LIST_TITLE_MESSAGE
+      @stdout.puts Most::LANG.exec_options_title
 
-      @options.marshal_dump.each do |name, value, description|
-        puts "  #{name} = #{value}, #{description}"
+      puts Most::SPECS.class::MOST_EXEC_OPTIONS
+      Most::SPECS::MOST_EXEC_OPTIONS.each do |name, options|
+        @stdout.puts "\n  #{options[2]}\n    #{options[0]}, #{options[1]}"
       end
     end
-  end 
+
+    def add_params(params)
+      parts = params.split(':')
+
+      param = ''; value = ''
+      if (parts.length == 2) and
+         (param = parts[0].strip()).length() > 0 and
+         (value = parts[1].strip()).length() > 0
+        @options.additional_parameters << [param, value]
+      else
+        if !@options.quiet
+          error_msg = Most::LANG.exec_redef_err_msg
+
+          error_msg = error_msg.sub('<argument>', params)
+
+          options_def = Most::SPECS::MOST_EXEC_OPTIONS[:parameter_flag][1]
+          error_msg = error_msg.sub('<correct_pattern>', (options_def ? options_def : '""'))
+
+          @stdout.puts error_msg
+        end
+      end
+    end
+
+    def change_config_path(path)
+      if File.exist?(path) and File.readable?(path)
+        @options.config_file = path.strip()
+      else
+        if !@options.quiet
+          @stdout.puts Most::LANG.
+                  exec_incorrect_path_msg.sub('<path>', (path ? path : '""'))
+        end
+      end
+    end
+  end
+
 end

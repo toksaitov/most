@@ -34,11 +34,20 @@
   for the list of supplied modules.
 =end
 
-$:.unshift(File.dirname(__FILE__)) unless
-  $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
+req_dir_name = File.dirname(__FILE__)
+abs_dir_name = File.expand_path(req_dir_name)
 
-require "require_all"
-require_all File.dirname(__FILE__) + '/most'
+$:.unshift(req_dir_name) unless
+  $:.include?(req_dir_name) || $:.include?(abs_dir_name)
+
+require abs_dir_name + '/most/helpers/loggers/most_logger'
+
+require abs_dir_name + '/most/helpers/formats/yaml_format_provider'
+
+require abs_dir_name + '/most/helpers/values/most_specs'
+require abs_dir_name + '/most/helpers/values/most_lang'
+
+require abs_dir_name + '/most/most_controller'
 
 module Most
   # General information
@@ -61,8 +70,83 @@ module Most
   # The offical website of the application
   URL = 'http://85.17.184.9/most'
 
+  # The copyright of the application
+  COPYRIGHT = "Copyright (C) 2009 #{AUTHOR}"
+
+  # The name of the root data directory
+  DATA_ROOT_DIR = '.most'
+
+  # Name of the application data directories 
+  DIRS =
+    {# The name of the directory where the configuration should be stored
+     :CONFIG_DIR => 'configs',
+
+     # The name of the directory for language files
+     :LANG_DIR   => 'langs',
+
+     # The name of the directory for log files
+     :LOGS_DIR   => 'logs',
+
+     # The name of the directory for temporary data
+     :TEMP_DIR  => 'temp'}
+
+  # The name of the initialization configuration file
+  INIT_CONFIG_FILE_NAME = 'init_config.yml'
+
+  # Mandatory preparations
+
+  # Check wether the data directories exist and creation of them if the process failed
+  if (!File.directory?(File.expand_path("~/#{DATA_ROOT_DIR}/")))
+    Dir.mkdir(File.expand_path("~/#{DATA_ROOT_DIR}/"))
+  end
+
+  DIRS.each do |key, name|
+    if (!File.directory?(File.expand_path("~/#{DATA_ROOT_DIR}/#{name}")))
+      Dir.mkdir(File.expand_path("~/#{DATA_ROOT_DIR}/#{name}"))
+    end
+  end
+
+  # General fields
+
+  # The current default format of the configuration and other Most system files
+  FORMAT = Most::Helpers::Formats::YAMLFormatProvider.new()
+
+  # General data and specifications
+  init_conf_file_path =
+          File.expand_path("~/#{DATA_ROOT_DIR}/#{DIRS[:CONFIG_DIR]}/#{INIT_CONFIG_FILE_NAME}")
+
+  if !File.exists?(init_conf_file_path)
+    init_conf_file_stream = File.open(init_conf_file_path, 'w+')
+  else
+    init_conf_file_stream = File.open(init_conf_file_path, 'r')
+  end
+
+  SPECS = Most::Helpers::Values::MostSpecs.new(init_conf_file_stream)
+
+  # General purpose strings
+  langs_file_path = File.expand_path(SPECS.default_lang_path)
+
+  if !File.exists?(langs_file_path)
+    langs_file_stream = File.open(langs_file_path, 'w+')
+  else
+    langs_file_stream = File.open(langs_file_path, 'r')
+  end
+
+  LANG = Most::Helpers::Values::MostLang.new(langs_file_stream)
+
+  # Logger used by the Most system
+  logger_conf_file_path = File.expand_path(SPECS.default_logger_config_path)
+
+  if !File.exists?(logger_conf_file_path)
+    logger_conf_file_stream = File.open(logger_conf_file_path, 'w+')
+  else
+    logger_conf_file_stream = File.open(logger_conf_file_path, 'r')
+  end
+
+  LOGGER = Most::Helpers::Loggers::MostLogger.new(logger_conf_file_stream)
+
   #
-  # Most.init -> a new instance of the MostController class
+  # Most.init -> a new instance of the +MostController+ class
   #
   #   The +init+ method must be used directly before
   #   any other methods if the the application is used as a library.
@@ -78,6 +162,24 @@ module Most
   #
   
   def self.init
-    # TODO - the initialization of the system
+    return MostController.new()
+  end
+
+  def self.halt
+    init_conf_file_path = "~/#{DATA_ROOT_DIR}/#{DIRS[:CONFIG_DIR]}/#{INIT_CONFIG_FILE_NAME}"
+    init_conf_file_stream = File.open(File.expand_path(init_conf_file_path), 'w')
+
+    SPECS.partially_serialize(init_conf_file_stream, Most::FORMAT)
+
+    langs_file_path = SPECS.default_lang_path
+    langs_file_stream = File.open(File.expand_path(langs_file_path), 'w')
+
+    LANG.partially_serialize(langs_file_stream, Most::FORMAT)
+
+    logger_conf_file_path = SPECS.default_logger_config_path
+    logger_conf_file_stream = File.open(File.expand_path(logger_conf_file_path), 'w')
+
+    LOGGER.partially_serialize(logger_conf_file_stream, Most::FORMAT)
+    LOGGER.halt()
   end
 end
