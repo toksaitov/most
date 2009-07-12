@@ -33,7 +33,7 @@ for example, of a SSH tunnel in order to provide a secure connection
 with the testing system.
 
 The default system bundle is shipped with a number of basic interface
-implementations (modules). Please, consider to take a look on the realize
+implementations (modules). Please, consider taking a look on realize
 notes for the list of supplied modules.
 
 == Features:
