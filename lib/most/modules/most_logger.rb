@@ -29,7 +29,8 @@ module Most
                    MODULE_DIRS,
                    MODULE_CONFIG_FILE_NAME)
 
-        @instances_defenition = []; @instances = {}
+        @instances_defenition = {}
+        @instances = {}
 
         mark_for_serialization(:instances_defenition); deserialize()
       end
