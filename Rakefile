@@ -8,7 +8,7 @@ require 'fileutils'
 require 'newgem'
 require 'rubigen'
 
-require File.dirname(__FILE__) + '/lib/most'
+require File.expand_path(File.dirname(__FILE__)) + '/lib/most'
 
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
@@ -38,9 +38,4 @@ $hoe = Hoe.new(Most::UNIX_NAME, Most::VERSION) do |p|
   p.rsync_args = '-av --delete --ignore-errors'
 end
 
-# Load /tasks/*.rake
 require 'newgem/tasks'
-# Dir['tasks/**/*.rake'].each { |t| load t }
-
-# TODO - want other tests/tasks run by default? Add them to the list
-# task :default => [:spec, :features]

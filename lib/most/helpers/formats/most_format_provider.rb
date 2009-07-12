@@ -3,8 +3,14 @@ module Most
     module Formats
 
       class MostFormatProvider
-        def to_format() end
-        def revert() end
+        def to_format()
+        end
+
+        def from_format()
+        end
+
+        def format_extension(file_name = nil)
+        end
       end
 
     end

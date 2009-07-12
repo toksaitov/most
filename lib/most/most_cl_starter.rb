@@ -1,3 +1,8 @@
+require 'optparse'
+require 'ostruct'
+
+require 'date'
+
 =begin rdoc
 = Most, the Core
 
@@ -86,14 +91,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses>.
 
 require File.expand_path(File.dirname(__FILE__) + "/../most")
 
-require 'optparse'
-require 'ostruct'
-
-require 'date'
-
 module Most
 
-  class MostStarter
+  class MostClStarter
+    MOST_EXEC_OPTIONS =
+      {:version_flag   => ['-v', '--version',            'Display the version information and exit.'],
+       :help_flag      => ['-h', '--help',               'Display this help message and exit.'],
+       :quiet_flag     => ['-q', '--quiet',              'Run in quiet mode without any CLI messages.'],
+       :verbose_flag   => ['-V', '--verbose',            'Run in verbose mode (ignored if quiet mode is on).'],
+       :config_flag    => ['-c', '--config [path]',      'Use specific configuration file.'],
+       :parameter_flag => ['-p', '--param [name:value]', 'Redefine a configuration parameter.']}
+
     attr_reader :env
 
     attr_reader :stdin, :stdout, :arguments
@@ -101,15 +109,21 @@ module Most
     attr_reader :tasks, :options
 
     def initialize(stdin = STDIN, stdout = STDOUT, arguments = [])
-      @stdin  = stdin
-      @stdout = stdout
+      if stdin and stdout
+        @stdin  = stdin
+        @stdout = stdout
+      else fail() end
 
-      @arguments = arguments
-
+      if arguments
+        @arguments = arguments
+      else
+        @arguments = []
+      end
+       
       @tasks = OpenStruct.new()
 
       @tasks.show_version = false
-      @tasks.show_help = false
+      @tasks.show_help    = false
 
       @options = OpenStruct.new()
 
@@ -117,11 +131,11 @@ module Most
       @options.additional_parameters = []
 
       @options.verbose = false
-      @options.quiet = false
+      @options.quiet   = false
     end
 
     def execute()
-      @env = Most::MostEnv.new().init()
+      @env = MostEnvironment.new(@stdin, @stdout) rescue
 
       if @env
         if options_parsed?()
@@ -136,7 +150,7 @@ module Most
           @stdout.puts("#{end_message}: #{DateTime.now}.") if @options.verbose
         end
 
-        @env.halt()
+        @env.finalize()
       end
     end
 
@@ -147,35 +161,38 @@ module Most
       begin
         parser = OptionParser.new()
 
-        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:version_flag]
+        options_def = MOST_EXEC_OPTIONS[:version_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) { @tasks.show_version = true }
 
-        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:help_flag]
+        options_def = MOST_EXEC_OPTIONS[:help_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) { @tasks.show_help = true }
 
-        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:verbose_flag]
+        options_def = MOST_EXEC_OPTIONS[:verbose_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do
           @options.verbose = true if !@options.quiet
         end
 
-        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:quiet_flag]
+        options_def = MOST_EXEC_OPTIONS[:quiet_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do
           @options.quiet = true; @options.verbose = false
         end
 
-        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:parameter_flag]
+        options_def = MOST_EXEC_OPTIONS[:parameter_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do |params|
           add_params(params)
         end
 
-        options_def = @env.specs.class::MOST_EXEC_OPTIONS[:config_flag]
+        options_def = MOST_EXEC_OPTIONS[:config_flag]
         parser.on(options_def[0], options_def[1], options_def[2]) do |path|
           change_config_path(path)
         end
         
         parser.parse!(@arguments)
       rescue Exception => e
-        @stdout.puts("#{@env.lang.exec_parse_failed_msg}, #{e.message}") if !@options.quiet
+        if !@options.quiet
+          @stdout.puts("#{@env.lang.exec_parse_failed_msg}, #{e.message}")
+        end
+
         result = false
       end
 
@@ -198,13 +215,13 @@ module Most
     
     def output_version()
       @stdout.puts(@env.lang.exec_version_msg)
-      @stdout.puts(Most::COPYRIGHT)
+      @stdout.puts(COPYRIGHT)
     end
 
     def output_options()
       @stdout.puts(@env.lang.exec_options_title)
 
-      @env.specs.class::MOST_EXEC_OPTIONS.each do |name, options|
+      MOST_EXEC_OPTIONS.each do |name, options|
         @stdout.puts("\n\t#{options[2]}\n\t\t#{options[0]}, #{options[1]}")
       end
     end
@@ -222,7 +239,7 @@ module Most
           error_msg = @env.lang.exec_redef_err_msg
           error_msg = @env.replacer.process(error_msg, {'<argument>' => params_string})
 
-          options_def = @env.specs.class::MOST_EXEC_OPTIONS[:parameter_flag][1]
+          options_def = MOST_EXEC_OPTIONS[:parameter_flag][1]
           error_msg   = @env.replacer.process(error_msg, {'<correct_pattern>' => options_def})
 
           @stdout.puts(error_msg)

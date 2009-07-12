@@ -9,14 +9,28 @@ module Most
           @rules_hash = new_rules_hash
         end
 
-        def process(data_string, rules_hash = @rules_hash)
-          if data_string and rules_hash
+        def process(data_string, rules_hash = nil)
+          result = ""
+
+          result = replace(data_string, rules_hash)
+          result = replace(result, @rules_hash)
+
+          return result
+        end
+
+        private
+        def replace(data_string, rules_hash)
+          result = ""
+
+          if data_string
+            result = data_string
+
             rules_hash.each do |pattern, value|
-              data_string.gsub!(pattern, value)
-            end
+              result = data_string.gsub(pattern, value)
+            end if rules_hash
           end
 
-          return data_string
+          return result
         end
       end
 
