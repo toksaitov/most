@@ -1,0 +1,19 @@
+---
+# Correct Tests
+- :memory: 10485760
+  :input: 22
+  :time: 10
+  :output: "4"
+- :memory: 10485760
+  :input: 11
+  :time: 10
+  :output: "2"
+# Incorrect Tests
+- :memory: 10485760
+  :input: 72
+  :time: 10
+  :output: "42"
+- :memory: 10485760
+  :input: 32
+  :time: 10
+  :output: "42"

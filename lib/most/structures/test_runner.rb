@@ -46,6 +46,9 @@ module Most
     end
 
     def run(options, entities, input)
+      SERVICES[:environment].state("#{4.w}Processing test runner #{@name}")
+      SERVICES[:environment].state("#{4.w}Number of steps: #{@steps.size}")
+
       result = Report.new("Test Runner: #{@name}")
 
       if options[:tests/:report/:specs]
@@ -54,6 +57,9 @@ module Most
       end
 
       result << execute(options, entities, input)
+      
+      SERVICES[:environment].state("#{4.w}|--> Test run successful?: #{result.last[:success]}")
+
       result
     end
 
@@ -86,6 +92,13 @@ module Most
 
         result[:steps] << step_box
         result[:process_stdout] = step_result.last[:process_stdout]
+
+        limits = step_result.last[:limits]
+
+        unless limits.nil?
+          result[:limits] ||= []
+          result[:limits] << limits
+        end
 
         unless step_result.last[:success]
           if options[:tests/:steps/:break/:unsuccessful]

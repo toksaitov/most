@@ -61,6 +61,8 @@ module Most
     end
 
     def run(options, entities)
+      SERVICES[:environment].state("#{2.w}Processing test case: #{@name}")
+
       result = Report.new("Test Case: #{@name}")
 
       if options[:tests/:report/:specs]
@@ -71,6 +73,12 @@ module Most
       end
 
       result << process(options, entities)
+
+      correct_status = result.last.last[:correct]; correct_status ||= false
+      message = "#{2.w}|--> Test case '#{@name}' correct?: #{correct_status}"
+
+      SERVICES[:environment].show_message(message)
+
       result
     end
 
@@ -78,6 +86,7 @@ module Most
     def process(options, entities)
       result = @runner.run(options, entities, @input)
 
+      result.last[:correct_output] = @output
       if result.last[:success]
         process_result!(result.last, options)
       end

@@ -18,7 +18,9 @@
 
 require 'time'
 require 'yaml'
+require "rexml/document"
 require 'timeout'
+require 'fileutils'
 
 require 'most/helpers/memory_out'
 
@@ -55,6 +57,7 @@ module Most
 
     include Timeout
     include MemoryOut
+    include FileUtils
 
     include BoxHelpers
 
@@ -74,7 +77,10 @@ module Most
     end
 
     def run(step)
-      result = Report.new("Box: #{@name}")
+      SERVICES[:environment].state("#{6.w}Executing a test box #{object_id}")
+      SERVICES[:environment].state("#{6.w}Step type: #{step.class}")
+
+      result = Report.new("Box: #{object_id}")
 
       if @options[:tests/:report/:specs]
         result.specs = {:options  => @options,
@@ -84,10 +90,41 @@ module Most
       end
 
       result << execute(step)
+      
+      SERVICES[:environment].state("#{6.w}|--> Finished.")
+
       result
     end
 
     private
+    def timeout_with_specs(sec, klass = nil, &block)
+      @result[:limits] ||= {}
+      @result[:limits][:time_limit] = sec
+
+      timeout(sec, klass, &block)
+    end
+
+    def memory_out_with_specs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
+      @result[:limits] ||= {}
+      @result[:limits][:memory_limit] = bytes
+
+      memory_out(bytes, pid, precision, klass, &block)
+    end
+
+    def virtual_memory_out_with_specs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
+      @result[:limits] ||= {}
+      @result[:limits][:virtual_memory_limit] = bytes
+
+      virtual_memory_out(bytes, pid, precision, klass, &block)
+    end
+
+    def total_memory_out_with_specs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
+      @result[:limits] ||= {}
+      @result[:limits][:total_memory_limit] = bytes
+
+      total_memory_out(bytes, pid, precision, klass, &block)
+    end
+
     def execute(step)
       @result[:started] = Time.now
       @result[:success] = true

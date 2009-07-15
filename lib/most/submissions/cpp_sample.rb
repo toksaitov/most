@@ -22,8 +22,8 @@ submission do
         end
 
         add_step Proc do
-          timeout specs[:time] do
-            total_memory_out specs[:memory] do
+          timeout_with_specs specs[:time] do
+            total_memory_out_with_specs specs[:memory] do
               rake_clean 'win:vc:run', entities[:executable], input
             end
           end

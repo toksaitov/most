@@ -63,16 +63,16 @@ module Most
     end
 
     def output_version()
-      @environment.show_message("#{FULL_NAME} version #{VERSION}")
-      @environment.show_message("#{COPYRIGHT}")
+      @environment.show_message("#{FULL_NAME} version #{VERSION}", false)
+      @environment.show_message("#{COPYRIGHT}", false)
     end
 
     def output_options()
-      @environment.show_message("Available options: \n\n")
-      @environment.show_message("Usage: #{UNIX_NAME} {[option] [parameter]}")
+      @environment.show_message("Available options: \n\n", false)
+      @environment.show_message("Usage: #{UNIX_NAME} {[option] [parameter]}", false)
 
       SERVICES[:starter].usage.each do |name, options|
-        @environment.show_message("\n\t#{options[2]}\n\t\t#{options[0]}, #{options[1]}")
+        @environment.show_message("\n\t#{options[2]}\n\t\t#{options[0]}, #{options[1]}", false)
       end
     end
   end

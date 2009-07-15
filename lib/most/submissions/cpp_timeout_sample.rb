@@ -3,7 +3,7 @@ submission do
 
   entities :source_file => path('main.cpp'), :executable  => path('main.exe')
 
-  options  :tests => {:report => {:differences => true, :time => true, :specs => true},
+  options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
 
   YAML.load_file('tests.yml').each_with_index do |specs, i|
@@ -22,7 +22,7 @@ submission do
         end
 
         add_step Proc do
-          timeout 5.seconds do
+          timeout_with_specs 5.seconds do
             rake_clean 'win:vc:run', entities[:executable], input
           end
         end

@@ -21,7 +21,7 @@ require 'yaml'
 module Most
 
   class Report
-    attr_accessor :name, :specs
+    attr_accessor :name, :specs, :units
     
     def initialize(name = 'Untitled Report', specs = {})
       @name  = name

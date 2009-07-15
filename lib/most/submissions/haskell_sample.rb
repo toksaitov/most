@@ -3,7 +3,7 @@ submission do
 
   entities :source_file => path('main.hs'), :executable => path('main.exe')
 
-  options  :tests => {:report => {:differences => true, :time => true, :specs => true},
+  options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
 
   YAML.load_file('tests.yml').each_with_index do |specs, i|
@@ -22,8 +22,8 @@ submission do
         end
 
         add_step Proc do
-          timeout specs[:time] do
-            total_memory_out specs[:memory] do
+          timeout_with_specs specs[:time] do
+            total_memory_out_with_specs specs[:memory] do
               rake_clean 'win:haskell:run', entities[:executable], input
             end
           end

@@ -16,49 +16,30 @@
 #    You should have received a copy of the GNU General Public License
 #    along with Most. If not, see <http://www.gnu.org/licenses/>.
 
-class Numeric
-  def milliseconds()
-    self / 100.0
+require 'rake/clean'
+
+namespace :win do
+
+  task :run, :executable, :arguments do |task, args|
+    args.with_defaults(:arguments => '')
+
+    service = Most::SERVICES[:open4]
+    service.popen4(%{#{args.executable} #{args.arguments}}) do |stdin, stdout, stderr, pid|
+      Most::GLOBALS[:pid] = pid
+
+      unless args.input.is_a?(Most::Path)
+        stdin.write(args.input)
+        stdin.close()
+      end
+
+      process_stdout = stdout.read()
+      process_stderr = stderr.read()
+
+      Most::GLOBALS[:output] = process_stdout
+
+      $stdout.puts(process_stdout)
+      $stderr.puts(process_stderr)
+    end
   end
 
-  def seconds()
-    self
-  end
-
-  def minutes()
-    self * 60
-  end
-
-  def hours()
-    self * 3600
-  end
-
-  def bits()
-    self * 8
-  end
-
-  def bytes()
-    self
-  end
-
-  def kilobytes()
-    self * 1024
-  end
-
-  def megabytes()
-    self * 1048576
-  end
-
-  def gigabytes()
-    self * 1073741824
-  end
-
-  def petabytes()
-    self * 1099511627776
-  end
-
-  def w()
-    result = ''; 1.upto(self) do result += ' ' end
-    result
-  end
 end

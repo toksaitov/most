@@ -58,9 +58,14 @@ module Most
       @logger.info(text)
     end
 
-    def show_message(message, is_log_data = false)
-      puts "#{message}"
+    def show_message(message, is_log_data = true)
+      puts message unless @modes[:quiet]
       log_message(message) if is_log_data
+    end
+
+    def state(message)
+      puts message if @modes[:verbose]
+      log_message(message)
     end
   end
 

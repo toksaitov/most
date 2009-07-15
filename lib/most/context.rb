@@ -102,6 +102,10 @@ module Most
       interface :show_message do |instance, text, is_log_data|
         instance.show_message(text, is_log_data)
       end
+
+      interface :state do |instance, text|
+        instance.state(text)
+      end
     end
 
     service :starter do

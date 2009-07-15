@@ -24,7 +24,7 @@ namespace :samples do
 
     source = File.join(MOST_ROOT, 'samples', '.')
     destination = Most::DIRECTORIES[:temp].first
-         
+
     FileUtils.cp_r(source, destination, {:verbose => true})
   end
   

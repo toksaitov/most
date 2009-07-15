@@ -89,7 +89,9 @@ module Most
     end
 
     def run()
-      SERVICES[:environment].log_message("Working...")
+      SERVICES[:environment].show_message("Working...")
+      SERVICES[:environment].state("Processing submission #{@name}")
+      SERVICES[:environment].state("Number of test cases: #{@tests.size}")
 
       result = Report.new("Submission: #{@name}")
 
@@ -109,6 +111,8 @@ module Most
           break if @options[:tests/:break/:incorrect]
         end
       end
+
+      SERVICES[:environment].state("|--> Finished.")
 
       result.to_yaml()
     end
