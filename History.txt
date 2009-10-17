@@ -1,7 +1,14 @@
-== 0.7.5 2009-27-12
+== 0.7.7 2009-29-11
+* Added generic submission
+* File specification is now possible in all standard submissions
+
+== 0.7.6 2009-28-11
+* Added Brainf submissions and task
+
+== 0.7.5 2009-27-11
 * Fixed dependencies problem on *nix
 
-== 0.7.4 2009-26-12
+== 0.7.4 2009-26-11
 * Now it is possible to load the Most library in order to get an ability to load serialized reports
     require 'most'
     report = YAML.load_file('report.yml')

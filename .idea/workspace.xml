@@ -4,8 +4,12 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="">
+    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="Generic Submissions. Lazy compiler execution.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manifest.txt" afterPath="$PROJECT_DIR$/Manifest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most.rb" afterPath="$PROJECT_DIR$/lib/most.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Bootup.iml" afterPath="$PROJECT_DIR$/.idea/Bootup.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/History.txt" afterPath="$PROJECT_DIR$/History.txt" />
     </list>
     <ignored path="../.idea/" />
     <ignored path="Bootup.iws" />
@@ -42,33 +46,6 @@
   <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ocaml.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/submissions/ocaml.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pascal.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/submissions/pascal.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="46" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pascal.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="7" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="run.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/run.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,10 +100,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generic.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="generic.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.8197065">
+            <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="most.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="20" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="History.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/History.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="16" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Manifest.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Manifest.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="16" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.4610123">
               <folding />
             </state>
           </provider>
@@ -153,9 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/most/submissions/brainf.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/delphi.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/erlang.rb" />
         <option value="$PROJECT_DIR$/lib/most/submissions/haskel.rb" />
         <option value="$PROJECT_DIR$/lib/most/submissions/java.rb" />
         <option value="$PROJECT_DIR$/lib/most/tasks/general/win/java.rb" />
@@ -169,6 +170,9 @@
         <option value="$PROJECT_DIR$/lib/most/submissions/vb.rb" />
         <option value="$PROJECT_DIR$/lib/most/submissions/pascal.rb" />
         <option value="$PROJECT_DIR$/lib/most/submissions/testlib.rb" />
+        <option value="$PROJECT_DIR$/lib/most.rb" />
+        <option value="$PROJECT_DIR$/History.txt" />
+        <option value="$PROJECT_DIR$/Manifest.txt" />
       </list>
     </option>
   </component>
@@ -978,20 +982,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pkg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="most" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="most" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1223,7 +1213,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.45400593" />
   </component>
-  <component name="RunManager" selected="Ruby.Custom Delphi Submission">
+  <component name="RunManager" selected="Rake.install_gem">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -1906,14 +1896,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29809222" sideWeight="0.668942" order="1" side_tool="true" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20028208" sideWeight="0.664465" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20028208" sideWeight="0.63672394" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37252313" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35402906" sideWeight="0.5" order="2" side_tool="false" />
@@ -2040,27 +2030,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/delphi.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="59" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/java.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="41" selection-start="751" selection-end="772" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/lisp.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/most/submissions/vb.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
@@ -2147,7 +2116,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.8197065">
+        <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="20" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/History.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Manifest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="16" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.4610123">
           <folding />
         </state>
       </provider>

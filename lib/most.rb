@@ -39,7 +39,7 @@ require 'most/structures/submission'
 module Most
   FULL_NAME = 'Most, the Core'
   UNIX_NAME = 'most'
-  VERSION   = '0.7.6'
+  VERSION   = '0.7.7'
 
   AUTHOR = 'Toksaitov Dmitrii Alexandrovich'
 

@@ -18,6 +18,7 @@
         <dependency name="hoe" version="2.1.0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="Rakefile" />
+      <source from="pkg/most-0.7.7/Rakefile" />
     </requirement>
     <requirement>
       <requirement>
