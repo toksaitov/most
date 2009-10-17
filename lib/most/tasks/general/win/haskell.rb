@@ -18,15 +18,13 @@
 
 require 'rake/clean'
 
-CLEAN.include('*.hi')
-CLEAN.include('*.o')
-
 namespace :win do
   namespace :haskell do
+    register_extension '.hs' => {:executable => '.exe', :namespace => 'win:haskell'}
 
     task :prepare do
       haskell_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'haskell')
         haskell_home = possible_path if File.directory?(possible_path)
       end
@@ -39,13 +37,20 @@ namespace :win do
       end
     end
 
-    task :compile, :source, :needs => [:prepare] do |task, args|
-      compilation_command = %{ghc -O #{args.source}}
+    task :compile, :source, :executable, :needs => [:prepare] do |task, args|
+      args.with_defaults(:executable => nil)
 
-      service = Most::SERVICES[:open4]
-      service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
-        $stdout.puts(stdout.read())
-        $stderr.puts(stderr.read())
+      if args.executable.nil? or not File.exist?(args.executable)
+        CLEAN.include('*.hi')
+        CLEAN.include('*.o')
+
+        compilation_command = %{ghc -O #{args.source}}
+
+        service = Most::SERVICES[:open4]
+        service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
+          $stdout.puts(stdout.read())
+          $stderr.puts(stderr.read())
+        end
       end
     end
 

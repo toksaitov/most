@@ -5,59 +5,107 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="Added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/tests/tests.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/lua_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/lua_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/cpp_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cpp_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/haskell_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/haskell_sample.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/tests/shuffle.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/tests/make_answers.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/problem.xml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\custom_delphi_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/testlib.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lisp\main.lisp" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lisp/main.lisp" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\ocaml_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/ocaml.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/vc.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/vc.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\brainf\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/brainf/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\python_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/python.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/array.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/array.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/php.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/php.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/lisp.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/lisp.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ruby\main.rb" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ruby/main.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ruby\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ruby/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\shuffle.exe" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/shuffle.exe" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\java\Main.java" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/java/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/submissions/generic.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/TDA.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/TDA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/tests/shuffle.dpr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/tests/make.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/ruby_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/ruby_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manifest.txt" afterPath="$PROJECT_DIR$/Manifest.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/submissions/custom_delphi_sample.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/tests/ones_rs.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/test_case.rb" afterPath="$PROJECT_DIR$/lib/most/structures/test_case.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/submission.rb" afterPath="$PROJECT_DIR$/lib/most/structures/submission.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/erlang_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/erlang_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/perl_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/perl_sample.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cpp_timeout_sample.rb" afterPath="$PROJECT_DIR$/samples/submissions/cpp_timeout_sample.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\haskell_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/haskell.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\time_memory\solutions\cpp\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/time_and_memory_out/cpp/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\ones_rs.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/ones_rs.dpr" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\pascal\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/pascal/tests.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/cs.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/cs.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/most.gemspec" afterPath="$PROJECT_DIR$/most.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/samples.rb" afterPath="$PROJECT_DIR$/tasks/samples.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/check.dpr" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\pascal\main.pas" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/pascal/main.pas" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\python\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/python/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\delphi\main.dpr" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/delphi/main.dpr" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cs\main.cs" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cs/main.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Bootup.iml" afterPath="$PROJECT_DIR$/.idea/Bootup.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/numeric.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/numeric.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/ones_is.dpr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/context.rb" afterPath="$PROJECT_DIR$/lib/most/context.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/tests/clean.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/problem/solutions/delphi/main.dpr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/problem/solutions/brainf/tests.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/borland_delphi.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/problem/solutions/delphi/tests.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/python_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/python_sample.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/custom/ones/ones_rs.dpr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/cpp_timeout_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cpp_timeout_sample.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/problem/solutions/brainf/main.b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/cpp_memory_out_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cpp_memory_out_sample.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/run.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/perl.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/perl.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cpp\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cpp/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\delphi\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/delphi/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\php\main.php" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/php/main.php" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cs_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cs.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/python.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/python.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/user.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/brainf.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/java_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/java_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/lisp_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/lisp_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/pascal_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/pascal_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/ocaml_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/ocaml_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/cs_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cs_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/executor.rb" afterPath="$PROJECT_DIR$/lib/most/executor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/environment.rb" afterPath="$PROJECT_DIR$/lib/most/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/php_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/php_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/vb_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/vb_sample.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/submissions/brainf_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/types/report.rb" afterPath="$PROJECT_DIR$/lib/most/structures/types/report.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\make_answers.bat" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/make_answers.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/kernel.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/kernel.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/ruby.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/ruby.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/gcc.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/gcc.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most.rb" afterPath="$PROJECT_DIR$/lib/most.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/spellchecker.xml" afterPath="$PROJECT_DIR$/.idea/spellchecker.xml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\java_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/java.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\pascal_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/pascal.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\vb_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/vb.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\ones_rs.exe" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/ones_rs.exe" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\perl\main.pl" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/perl/main.pl" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\problem.xml" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/problem.xml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\make.bat" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/make.bat" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\clean.bat" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/clean.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/java.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/java.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lisp\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lisp/tests.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/lua.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/lua.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/box.rb" afterPath="$PROJECT_DIR$/lib/most/structures/box.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/test_runner.rb" afterPath="$PROJECT_DIR$/lib/most/structures/test_runner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/submissions/borland_delphi_sample.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/core.rb" afterPath="$PROJECT_DIR$/lib/most/core.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/ocaml.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/ocaml.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cpp\main.cpp" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cpp/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/erlang.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/erlang.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\java\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/java/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\php_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/php.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/submissions/brainf.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lua\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lua/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\php\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/php/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\tests.lst" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/tests.lst" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cs\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cs/tests.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/History.txt" afterPath="$PROJECT_DIR$/History.txt" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\brainf\main.b" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/brainf/main.b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/haskell.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/haskell.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\shuffle.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/shuffle.dpr" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cpp_memory_out_sample.rb" afterPath="$PROJECT_DIR$/samples/submissions/cpp_memory_out_sample.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\lisp_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/lisp.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\vb\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/vb/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\python\main.py" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/python/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/submission.rb" afterPath="$PROJECT_DIR$/lib/most/structures/submission.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\ruby_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/ruby.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/samples.rb" afterPath="$PROJECT_DIR$/tasks/samples.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cpp_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cpp.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lua\main.lua" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lua/main.lua" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\haskell\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/haskell/tests.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/context.rb" afterPath="$PROJECT_DIR$/lib/most/context.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/helpers/string.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\ones_is.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/ones_is.dpr" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\time_memory\solutions\cpp\main.cpp" afterPath="$PROJECT_DIR$/samples/problems/time_and_memory_out/cpp/main.cpp" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\erlang\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/erlang/tests.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/starter.rb" afterPath="$PROJECT_DIR$/lib/most/starter.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\haskell\main.hs" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/haskell/main.hs" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\borland_delphi_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/delphi.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\check.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/check.dpr" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ocaml\main.ml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ocaml/main.ml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ocaml\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ocaml/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\perl_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/perl.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\tasks\general\win\borland_delphi.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/delphi.rb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\perl\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/perl/tests.yml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\vb\main.vb" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/vb/main.vb" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\erlang\main.erl" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/erlang/main.erl" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\erlang_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/erlang.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\lua_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/lua.rb" />
     </list>
     <ignored path="../.idea/" />
     <ignored path="Bootup.iws" />
@@ -75,50 +123,54 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DisabledGemRequirementsHolder">
+    <module name="Bootup">
+      <requirement>
+        <dependency name="rubyforge" version="1.0.4" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <requirement>
+        <dependency name="activesupport" version="2.2.2" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <requirement>
+        <dependency name="activesupport" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+    </module>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Bootup" />
   </component>
   <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test_case.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/structures/test_case.rb">
+      <file leaf-file-name="ocaml.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/submissions/ocaml.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="50" selection-start="2422" selection-end="2422" vertical-scroll-proportion="0.0">
+            <state line="10" column="2" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="object.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/helpers/object.rb">
+      <file leaf-file-name="pascal.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/submissions/pascal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="5" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
+            <state line="4" column="46" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Manifest.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Manifest.txt">
+      <file leaf-file-name="pascal.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4513482">
+            <state line="36" column="7" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostInstall.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PostInstall.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="most.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most.rb">
+      <file leaf-file-name="run.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/run.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -126,17 +178,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="brainf.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/brainf.rb">
+      <file leaf-file-name="vb.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="27" column="48" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="symbol.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/helpers/symbol.rb">
+      <file leaf-file-name="testlib.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/submissions/testlib.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="9" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/helpers/array.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -153,8 +214,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hash.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/helpers/hash.rb">
+      <file leaf-file-name="context.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/context.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -162,10 +223,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/helpers/array.rb">
+      <file leaf-file-name="generic.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.53488374">
               <folding />
             </state>
           </provider>
@@ -191,22 +252,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tasks/samples.rb" />
-        <option value="$PROJECT_DIR$/lib/most/tasks/general/win/run.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/custom_delphi_submission_sample.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/custom_delphi_sample.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/brainf_sample.rb" />
-        <option value="$PROJECT_DIR$/lib/most/tasks/general/win/borland_delphi.rb" />
-        <option value="$PROJECT_DIR$/lib/most/executor.rb" />
-        <option value="$PROJECT_DIR$/lib/most/helpers/numeric.rb" />
-        <option value="$PROJECT_DIR$/lib/most/structures/test_runner.rb" />
-        <option value="$PROJECT_DIR$/lib/most/structures/box.rb" />
-        <option value="$PROJECT_DIR$/lib/most/structures/submission.rb" />
-        <option value="$PROJECT_DIR$/lib/most/environment.rb" />
-        <option value="$PROJECT_DIR$/lib/most/tasks/general/win/branf.rb" />
-        <option value="$PROJECT_DIR$/lib/most/context.rb" />
-        <option value="$PROJECT_DIR$/lib/most/structures/test_case.rb" />
-        <option value="$PROJECT_DIR$/Manifest.txt" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/brainf.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/delphi.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/erlang.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/haskel.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/java.rb" />
+        <option value="$PROJECT_DIR$/lib/most/tasks/general/win/java.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/lisp.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/perl.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/php.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/python.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/ruby.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/lua.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/ocaml.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/vb.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/pascal.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/testlib.rb" />
       </list>
     </option>
   </component>
@@ -484,6 +545,10 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+      </pane>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -530,11 +595,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="time_memory" />
+              <option name="myItemId" value="submissions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="solutions" />
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time_and_memory_out" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -556,11 +639,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="problem" />
+              <option name="myItemId" value="problems" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="solutions" />
+              <option name="myItemId" value="testlib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ones" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,6 +662,422 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="perl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pascal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocaml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lisp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haskell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erlang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cpp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="samples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sum_of_numbers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="brainf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pkg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -776,11 +1279,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="most" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
-      </pane>
-      <pane id="Favorites" />
-      <pane id="Scope">
-        <subPane subId="Problems" />
       </pane>
     </panes>
   </component>
@@ -798,18 +1311,18 @@
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="375" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="669" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="375" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="854" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="669" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="175" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="180" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.splitter.details.proportions" value="0.45400593" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.45400593" />
   </component>
-  <component name="RunManager" selected="Rake.release_to_rubyforge">
+  <component name="RunManager" selected="Ruby.Custom Delphi Submission">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -1017,7 +1530,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="release_to_rubyforge" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="VERSION=0.7.5" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="VERSION=0.7.6" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
@@ -1047,13 +1560,29 @@
     <configuration default="false" name="Simple Cpp Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/cpp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/cpp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s cpp_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s cpp -f result.yml" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Simple Generic Submission" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="Bootup" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/cpp" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s generic -p main.cpp -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1063,13 +1592,13 @@
     <configuration default="false" name="Simple Java Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/java" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/java" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s java_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s java -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1079,13 +1608,13 @@
     <configuration default="false" name="Simple Python Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/python" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/python" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s python_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s python -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1093,13 +1622,13 @@
     <configuration default="false" name="Simple PHP Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/php" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/php" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s php_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s php -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1109,13 +1638,13 @@
     <configuration default="false" name="Simple Ruby Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/ruby" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/ruby" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s ruby_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s ruby -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1125,13 +1654,13 @@
     <configuration default="false" name="Simple Erlang Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/erlang" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/erlang" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s erlang_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s erlang -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1141,13 +1670,13 @@
     <configuration default="false" name="Simple Perl Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/perl" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/perl" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s perl_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s perl -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1155,13 +1684,13 @@
     <configuration default="false" name="Simple OCaml Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/ocaml" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/ocaml" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s ocaml_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s ocaml -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1169,13 +1698,13 @@
     <configuration default="false" name="Simple Lua Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/lua" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/lua" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s lua_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s lua -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1183,13 +1712,13 @@
     <configuration default="false" name="Simple Haskell Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/haskell" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/haskell" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s haskell_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s haskell -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1197,13 +1726,13 @@
     <configuration default="false" name="Simple Pascal Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/pascal" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/pascal" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s pascal_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s pascal -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1211,13 +1740,13 @@
     <configuration default="false" name="Simple Lisp Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/lisp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/lisp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s lisp_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s lisp -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1225,13 +1754,13 @@
     <configuration default="false" name="Simple VB Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/vb" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/vb" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s vb_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s vb -f result.yml" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -1239,13 +1768,13 @@
     <configuration default="false" name="Simple VC# Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/cs" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/cs" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s cs_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s cs -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1255,13 +1784,13 @@
     <configuration default="false" name="Simple Delphi Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/delphi" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/delphi" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s borland_delphi_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s delphi -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1271,13 +1800,13 @@
     <configuration default="false" name="Custom Delphi Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/custom/ones" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/testlib/dates" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-s custom_delphi_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-s testlib -p dates_is.dpr -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1287,13 +1816,13 @@
     <configuration default="false" name="Simple Brainf Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/problem/solutions/brainf" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/brainf" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s brainf_sample.rb -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s brainf -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1331,7 +1860,7 @@
     <configuration default="false" name="Cpp &quot;MemoryOut&quot; Test" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/time_memory/solutions/cpp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/time_and_memory_out/cpp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1347,7 +1876,7 @@
     <configuration default="false" name="Cpp &quot;Timeout&quot; Test" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/temp/time_memory/solutions/cpp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/time_and_memory_out/cpp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1358,7 +1887,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="29">
+    <list size="30">
       <item index="0" class="java.lang.String" itemvalue="Rake.samples:prepare" />
       <item index="1" class="java.lang.String" itemvalue="Rake.clean" />
       <item index="2" class="java.lang.String" itemvalue="Rake.gem" />
@@ -1368,26 +1897,27 @@
       <item index="6" class="java.lang.String" itemvalue="Rake.release_to_rubyforge" />
       <item index="7" class="java.lang.String" itemvalue="Rake.manifest" />
       <item index="8" class="java.lang.String" itemvalue="Ruby.Simple Cpp Submission" />
-      <item index="9" class="java.lang.String" itemvalue="Ruby.Simple Java Submission" />
-      <item index="10" class="java.lang.String" itemvalue="Ruby.Simple Python Submission" />
-      <item index="11" class="java.lang.String" itemvalue="Ruby.Simple PHP Submission" />
-      <item index="12" class="java.lang.String" itemvalue="Ruby.Simple Ruby Submission" />
-      <item index="13" class="java.lang.String" itemvalue="Ruby.Simple Erlang Submission" />
-      <item index="14" class="java.lang.String" itemvalue="Ruby.Simple Perl Submission" />
-      <item index="15" class="java.lang.String" itemvalue="Ruby.Simple OCaml Submission" />
-      <item index="16" class="java.lang.String" itemvalue="Ruby.Simple Lua Submission" />
-      <item index="17" class="java.lang.String" itemvalue="Ruby.Simple Haskell Submission" />
-      <item index="18" class="java.lang.String" itemvalue="Ruby.Simple Pascal Submission" />
-      <item index="19" class="java.lang.String" itemvalue="Ruby.Simple Lisp Submission" />
-      <item index="20" class="java.lang.String" itemvalue="Ruby.Simple VB Submission" />
-      <item index="21" class="java.lang.String" itemvalue="Ruby.Simple VC# Submission" />
-      <item index="22" class="java.lang.String" itemvalue="Ruby.Simple Delphi Submission" />
-      <item index="23" class="java.lang.String" itemvalue="Ruby.Custom Delphi Submission" />
-      <item index="24" class="java.lang.String" itemvalue="Ruby.Simple Brainf Submission" />
-      <item index="25" class="java.lang.String" itemvalue="Ruby.Test Help Flag" />
-      <item index="26" class="java.lang.String" itemvalue="Ruby.Test Version Flag" />
-      <item index="27" class="java.lang.String" itemvalue="Ruby.Cpp &quot;MemoryOut&quot; Test" />
-      <item index="28" class="java.lang.String" itemvalue="Ruby.Cpp &quot;Timeout&quot; Test" />
+      <item index="9" class="java.lang.String" itemvalue="Ruby.Simple Generic Submission" />
+      <item index="10" class="java.lang.String" itemvalue="Ruby.Simple Java Submission" />
+      <item index="11" class="java.lang.String" itemvalue="Ruby.Simple Python Submission" />
+      <item index="12" class="java.lang.String" itemvalue="Ruby.Simple PHP Submission" />
+      <item index="13" class="java.lang.String" itemvalue="Ruby.Simple Ruby Submission" />
+      <item index="14" class="java.lang.String" itemvalue="Ruby.Simple Erlang Submission" />
+      <item index="15" class="java.lang.String" itemvalue="Ruby.Simple Perl Submission" />
+      <item index="16" class="java.lang.String" itemvalue="Ruby.Simple OCaml Submission" />
+      <item index="17" class="java.lang.String" itemvalue="Ruby.Simple Lua Submission" />
+      <item index="18" class="java.lang.String" itemvalue="Ruby.Simple Haskell Submission" />
+      <item index="19" class="java.lang.String" itemvalue="Ruby.Simple Pascal Submission" />
+      <item index="20" class="java.lang.String" itemvalue="Ruby.Simple Lisp Submission" />
+      <item index="21" class="java.lang.String" itemvalue="Ruby.Simple VB Submission" />
+      <item index="22" class="java.lang.String" itemvalue="Ruby.Simple VC# Submission" />
+      <item index="23" class="java.lang.String" itemvalue="Ruby.Simple Delphi Submission" />
+      <item index="24" class="java.lang.String" itemvalue="Ruby.Custom Delphi Submission" />
+      <item index="25" class="java.lang.String" itemvalue="Ruby.Simple Brainf Submission" />
+      <item index="26" class="java.lang.String" itemvalue="Ruby.Test Help Flag" />
+      <item index="27" class="java.lang.String" itemvalue="Ruby.Test Version Flag" />
+      <item index="28" class="java.lang.String" itemvalue="Ruby.Cpp &quot;MemoryOut&quot; Test" />
+      <item index="29" class="java.lang.String" itemvalue="Ruby.Cpp &quot;Timeout&quot; Test" />
     </list>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Ruby test">
       <module name="" />
@@ -1449,11 +1979,11 @@
     <option name="DETECT_NESTED_COPIES" value="true" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <configuration useDefault="true">C:\Users\TDA\AppData\Roaming\Subversion</configuration>
+    <configuration useDefault="true">C:\Users\user\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
-  <component name="TodoView" selected-index="2">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -1474,24 +2004,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265074" sideWeight="0.5" order="8" side_tool="false" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32195678" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.5" order="6" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29809222" sideWeight="0.668942" order="1" side_tool="true" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2782194" sideWeight="0.6370876" order="0" side_tool="false" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3731513" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35494882" sideWeight="0.5" order="2" side_tool="false" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32536975" sideWeight="0.5" order="9" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20028208" sideWeight="0.63672394" order="0" side_tool="false" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37252313" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35402906" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32496697" sideWeight="0.5" order="11" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747254" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
-      <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="11" side_tool="false" x="11" y="349" width="1258" height="286" />
+      <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="10" side_tool="false" x="11" y="349" width="1258" height="286" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39954597" sideWeight="0.5" order="5" side_tool="false" />
     </layout>
@@ -1507,7 +2037,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected .gemspec" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Borland Delphi Rake task and sample submission, added nifty stdout output" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1540,6 +2070,7 @@
     <MESSAGE value="Project files from &quot;.idea&quot;" />
     <MESSAGE value="YAML deserialization of the report" />
     <MESSAGE value="Corrected .gemspec" />
+    <MESSAGE value="Added Borland Delphi Rake task and sample submission, added nifty stdout output" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1552,107 +2083,146 @@
           <url>file://C:/Users/user/RubymineProjects/Test/paint/paint.rb</url>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/development/Projects/Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
           <line>68</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/development/Projects/Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
           <line>89</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/development/Projects/Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
           <line>87</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Most/Dev/Bootup/rgavel/config/environment.rb</url>
+          <url>file://$PROJECT_DIR$/../rgavel/config/environment.rb</url>
           <line>15</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/drep_cli.rb</url>
           <line>139</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Dango/DangoReport/drep/lib/drep/alterers/drep_helpers.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/alterers/drep_helpers.rb</url>
           <line>21</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Dango/DangoReport/drep/assets/providers/drep_most_provider.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/assets/providers/drep_most_provider.rb</url>
           <line>30</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Dango/DangoReport/drep/assets/rules/drep_most_rules.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/assets/rules/drep_most_rules.rb</url>
           <line>27</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/most/structures/box.rb</url>
-          <line>93</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Dango/DangoReport/drep/lib/drep/core/drep_executer.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/core/drep_executer.rb</url>
           <line>182</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Dango/DangoReport/drep/lib/drep/core/drep_executer.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/core/drep_executer.rb</url>
           <line>126</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://C:/Development/Projects/Dango/DangoReport/drep/lib/drep/core/drep_executer.rb</url>
+          <url>file://$PROJECT_DIR$/../../../../Dango/DangoReport/drep/lib/drep/core/drep_executer.rb</url>
           <line>145</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://C:/Users/TDA/RubymineProjects/buba/paint.rb</url>
+          <line>63</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/most/tasks/general/win/delphi.rb</url>
+          <line>39</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/most/structures/box.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/delphi.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="2443" selection-end="2443" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="59" selection-end="199" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/di/container.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/java.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.0">
+        <state line="24" column="41" selection-start="751" selection-end="772" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/context.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/lisp.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="22" selection-start="2957" selection-end="2957" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/environment.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/vb.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.0">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/core.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/haskell.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="0" selection-start="3322" selection-end="3322" vertical-scroll-proportion="0.0">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/structures/submission.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/lua.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="55" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/structures/test_case.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/ocaml.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="50" selection-start="2422" selection-end="2422" vertical-scroll-proportion="0.0">
+        <state line="10" column="2" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/helpers/symbol.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/pascal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="46" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="7" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/run.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="48" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/testlib.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="9" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/helpers/array.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1666,51 +2236,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/helpers/hash.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/context.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/helpers/array.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/helpers/object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="5" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PostInstall.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/brainf.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Manifest.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4513482">
+        <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.53488374">
           <folding />
         </state>
       </provider>

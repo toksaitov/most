@@ -19,41 +19,47 @@
 require 'rake/clean'
 
 namespace :win do
-  namespace :php do
-    register_extension '.php' => {:namespace => 'win:php'}
+  namespace :brainf do
+    register_extension '.b' => {:namespace => 'win:brainf'}
 
     task :prepare do
-      php_home = nil
+      brainf_home = nil
       Most::DIRECTORIES[:all_vendors].each do |directory|
-        possible_path = File.join(directory, 'php')
-        php_home = possible_path if File.directory?(possible_path)
+        possible_path = File.join(directory, 'brainf')
+        brainf_home = possible_path if File.directory?(possible_path)
       end
 
-      unless php_home.nil?
-        ENV['PATH'] ||= ''; ENV['PATH'] = "#{php_home};#{ENV['PATH']}"
+      unless brainf_home.nil?
+        ENV['PATH'] ||= ''; ENV['PATH'] = "#{brainf_home};#{ENV['PATH']}"
       end
     end
 
     task :run, :executable, :input, :needs => [:prepare] do |task, args|
-      args.with_defaults(:input => '')
+      CLEAN.include('~app.b')
+      CLEAN.include('*.out')
 
-      service = Most::SERVICES[:open4]
-      service.popen4(%{php #{args.executable}}) do |stdin, stdout, stderr, pid|
-        Most::GLOBALS[:pid] = pid
-
-        unless args.input.is_a?(Most::Path)
-          stdin.write(args.input)
-          stdin.close()
-        end
-
-        process_stdout = stdout.read()
-        process_stderr = stderr.read()
-
-        Most::GLOBALS[:output] = process_stdout
-
-        $stdout.puts(process_stdout)
-        $stderr.puts(process_stderr)
+      input = args.input
+      if args.input.is_a?(Most::Path)
+        input = File.read(args.input)
       end
+
+      source = File.read(args.executable)
+
+      File.open('~app.b', 'w+') do |io|
+        io.write("#{source}!#{input}")
+      end
+
+      IO.popen(%{bff4.exe <~app.b 1>~std.out 2>~err.out}, 'r') do |io|
+        Most::GLOBALS[:pid] = io.pid
+      end
+
+      process_stdout = File.read('~std.out') rescue ''
+      process_stderr = File.read('~err.out') rescue ''
+
+      Most::GLOBALS[:output] = process_stdout
+
+      $stdout.puts(process_stdout)
+      $stderr.puts(process_stderr)
     end
 
   end

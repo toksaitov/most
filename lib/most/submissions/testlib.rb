@@ -8,8 +8,13 @@ submission do
   input_files = Dir[specs.attributes['input-href'].gsub('#', '[0-9]').chomp('.')]
   answer_files = Dir[specs.attributes['answer-href'].gsub('#', '[0-9]').chomp('.')]
   
-  input_file = specs.attributes['input-name']
+  input_file  = specs.attributes['input-name']
   output_file = specs.attributes['output-name']
+
+  source_file = parameters.first; fail 'Source was not specified' if source_file.nil?
+
+  source_extension = source_extension(source_file)
+  exec_extension   = exec_extension(source_file)
 
   time_limit = specs.attributes['time-limit'].downcase
   if time_limit['ms']
@@ -29,7 +34,9 @@ submission do
   entities :problem_name => problem_name,
 
            :checker => path('check.dpr'), :checker_executable => path('check.exe'),
-           :source  => path("#{problem_name}_is.dpr"), :executable => path("#{problem_name}_is.exe"),
+
+           :source      => path(source_file),
+           :executable  => path(source_file.to_extension(exec_extension)),
 
            :input_file  => path(input_file),
            :output_file => path(output_file),
@@ -43,8 +50,10 @@ submission do
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
 
-  entities = entities()
+  rm entities[:checker_executable], :force => true
+  rm entities[:executable], :force => true
 
+  entities = entities()
   1.upto(number_of_tests) do |i|
     
     add_test TestCase do
@@ -63,24 +72,15 @@ submission do
       end
 
       runner TestRunner do
-        name 'Custom Borland Delphi Runner'
+        name 'Custom Testlib Runner'
 
         add_step Proc do
-          rake_clean 'win:borland_delphi:compile', entities[:checker]
-        end
-
-        add_step Proc do
-          rake_clean 'win:borland_delphi:compile', entities[:source]
-        end
-
-        add_step Proc do
-          rake_clean 'win:borland_delphi:compile', entities[:source]
+          rake_clean 'win:delphi:compile', entities[:checker], entities[:checker_executable]
         end
 
         add_step Proc do
           if entities[:input_files].size  != number_of_tests or
              entities[:answer_files].size != number_of_tests
-            STDOUT.puts 'buba'
 
             rake 'win:run', 'cd tests && make'
 
@@ -95,11 +95,21 @@ submission do
         end
 
         add_step Proc do
-          timeout_with_specs time_limit do
-            total_memory_out_with_specs memory_limit do
-              rake_clean 'win:borland_delphi:run', entities[:executable], input
+           rake_clean "#{extension_namespace(source_extension)}:compile",
+                       entities[:source], entities[:executable]
+        end
+
+        add_step Proc do
+
+          timeouts time_limit do
+            total_memory_outs memory_limit do
+
+              rake_clean "#{extension_namespace(source_extension)}:run",
+                          entities[:executable], input
+
             end
           end
+
         end
 
         add_step Proc do

@@ -1,7 +1,7 @@
 submission do
-  name 'Simple Borland Delphi Submission'
+  name 'Simple PHP Submission'
 
-  entities :source_file => path('main.dpr'), :executable => path('main.exe')
+  entities :executable => path(parameters.first || 'main.php')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -15,18 +15,18 @@ submission do
       output specs[:output]
 
       runner TestRunner do
-        name 'Borland Delphi Runner'
+        name 'PHP Runner'
 
         add_step Proc do
-          rake_clean 'win:borland_delphi:compile', entities[:source_file]
-        end
 
-        add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
-              rake_clean 'win:borland_delphi:run', entities[:executable], input
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
+              rake_clean 'win:php:run', entities[:executable], input
+
             end
           end
+
         end
 
       end

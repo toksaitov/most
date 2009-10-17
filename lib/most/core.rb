@@ -58,7 +58,7 @@ module Most
 
     private
     def form_paths(submission)
-      paths = DIRECTORIES[:submissions].collect do |directory|
+      paths = DIRECTORIES[:all_submissions].collect do |directory|
         File.expand_path(File.join(directory, submission))
       end
 
@@ -71,7 +71,9 @@ module Most
       result = {}
 
       result['.yml'] = process_yaml_lambda()
+      
       result['.rb']  = process_ruby_lambda()
+      result['']     = process_ruby_lambda()
 
       result
     end
@@ -119,7 +121,7 @@ module Most
         code = nil; exception = nil
         paths.each do |path|
           begin
-            code = File.read(path)
+            code = File.read(File.extname(path).empty? ? "#{path}.rb" : path)
           rescue Exception => e
             exception = e; next
           end
@@ -146,7 +148,7 @@ module Most
     end
 
     def load_objects()
-      result = DIRECTORIES[:tasks]
+      result = DIRECTORIES[:all_tasks]
 
       if result.is_a?(Array)
         result.each do |directory|

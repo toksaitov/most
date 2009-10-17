@@ -18,14 +18,13 @@
 
 require 'rake/clean'
 
-CLEAN.include('*.dump')
-
 namespace :win do
   namespace :erlang do
-
+    register_extension '.erl' => {:executable => '', :namespace => 'win:erlang'}
+    
     task :prepare do
       erlang_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'erlang')
         erlang_home = possible_path if File.directory?(possible_path)
       end
@@ -50,13 +49,19 @@ namespace :win do
       end
     end
 
-    task :compile, :source, :needs => [:prepare] do |task, args|
-      compilation_command = %{erlc #{args.source}}
+    task :compile, :source, :executable, :needs => [:prepare] do |task, args|
+      args.with_defaults(:executable => nil)
 
-      service = Most::SERVICES[:open4]
-      service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
-        $stdout.puts(stdout.read())
-        $stderr.puts(stderr.read())
+      if args.executable.nil? or not File.exist?(args.executable)
+        CLEAN.include('*.dump')
+
+        compilation_command = %{erlc #{args.source}}
+
+        service = Most::SERVICES[:open4]
+        service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
+          $stdout.puts(stdout.read())
+          $stderr.puts(stderr.read())
+        end
       end
     end
 

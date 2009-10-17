@@ -99,7 +99,11 @@ module Most
 
         parser_argument(:submission_parameters_flag) do |parameters|
           @options[:submission_parameters] ||= []
-          @options[:submission_parameters] << parameters
+
+          unless parameters.nil?
+            parameters = parameters.split(',').map { |item| item.strip() }
+            @options[:submission_parameters] += parameters
+          end
         end
 
         parser_argument(:output_file_flag) do |file|

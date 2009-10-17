@@ -22,10 +22,12 @@ namespace :samples do
   task :prepare do
     require 'fileutils'
 
-    source = File.join(MOST_ROOT, 'samples', '.')
-    destination = Most::DIRECTORIES[:temp].first
+    paths = [[File.join(MOST_ROOT, 'samples', 'problems', '.'), Most::DIRECTORIES[:problems]],
+             [File.join(MOST_ROOT, 'samples', 'submissions', '.'), Most::DIRECTORIES[:user_submissions]]]
 
-    FileUtils.cp_r(source, destination, {:verbose => true})
+    paths.each do |pair|
+      FileUtils.cp_r(pair.first, pair.last, :verbose => true)
+    end
   end
-  
+
 end

@@ -20,10 +20,11 @@ require 'rake/clean'
 
 namespace :win do
   namespace :lisp do
+    register_extension '.lisp' => {:namespace => 'win:lisp'}
 
     task :prepare do
       lisp_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'lisp')
         lisp_home = possible_path if File.directory?(possible_path)
       end

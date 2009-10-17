@@ -3,7 +3,9 @@
     <words>
       <w>Dmitrii</w>
       <w>ICPC</w>
+      <w>args</w>
       <w>attr</w>
+      <w>basename</w>
       <w>borland</w>
       <w>brainf</w>
       <w>chdir</w>
@@ -12,16 +14,22 @@
       <w>deps</w>
       <w>deserialize</w>
       <w>dirname</w>
+      <w>downcase</w>
       <w>erlang</w>
       <w>erts</w>
+      <w>eval</w>
+      <w>extname</w>
       <w>extralibs</w>
       <w>getc</w>
       <w>getwd</w>
       <w>globals</w>
       <w>gsub</w>
       <w>haskell</w>
+      <w>klass</w>
+      <w>mkdir</w>
       <w>newgem</w>
       <w>ocaml</w>
+      <w>outb</w>
       <w>params</w>
       <w>perl</w>
       <w>popen</w>
@@ -30,7 +38,11 @@
       <w>reenable</w>
       <w>rubyforge</w>
       <w>serializables</w>
+      <w>stderr</w>
+      <w>stdin</w>
+      <w>stdout</w>
       <w>unshift</w>
+      <w>upto</w>
       <w>yaml</w>
     </words>
   </dictionary>

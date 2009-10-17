@@ -28,4 +28,23 @@ class Array
 
     result
   end
+
+  alias old_method_missing method_missing
+  def method_missing(name, *args, &block)
+    result = nil
+    
+    numerals = ['first',   'second', 'third',
+                'fourth',  'fifth',  'sixth',
+                'seventh', 'eighth', 'ninth',
+                'tenth']
+
+    index = numerals.index(name.to_s())
+    unless index.nil?
+      result = self[index]
+    else
+      result = old_method_missing(name, *args, &block)
+    end
+
+    result
+  end
 end

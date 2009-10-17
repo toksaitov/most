@@ -1,11 +1,14 @@
 submission do
-  name 'C/C++ "MemoryOut" Test'
+  name 'Simple C/C++ Submission'
 
-  entities :source_file => path('main.cpp'), :executable  => path('main.exe')
+  entities :source => path(parameters.first || 'main.cpp'),
+           :executable => path((parameters.first || 'main').to_extension('.exe'))
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
 
+  rm entities[:executable], :force => true
+  
   YAML.load_file('tests.yml').each_with_index do |specs, i|
 
     add_test TestCase do
@@ -18,13 +21,20 @@ submission do
         name 'C/C++ Runner'
 
         add_step Proc do
-          rake_clean 'win:vc:compile', entities[:source_file]
+          rake_clean 'win:vc:compile', entities[:source],
+                                       entities[:executable]
         end
 
         add_step Proc do
-          total_memory_out_with_specs 10.megabytes do
-            rake_clean 'win:vc:run', entities[:executable], input
+
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
+              rake_clean 'win:vc:run', entities[:executable], input
+
+            end
           end
+
         end
 
       end

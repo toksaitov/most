@@ -1,7 +1,7 @@
 submission do
-  name 'Simple Visual Basic Submission'
+  name 'Simple Ruby Submission'
 
-  entities :source_file => path('main.vb'), :executable => path('main.exe')
+  entities :executable => path(parameters.first || 'main.rb')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -15,18 +15,18 @@ submission do
       output specs[:output]
 
       runner TestRunner do
-        name 'Visual Basic Runner'
+        name 'Ruby Runner'
 
         add_step Proc do
-          rake_clean 'win:vb:compile', entities[:source_file]
-        end
 
-        add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
-              rake_clean 'win:vb:run', entities[:executable], input
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
+              rake_clean 'win:ruby:run', entities[:executable], input
+
             end
           end
+          
         end
 
       end

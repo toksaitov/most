@@ -1,7 +1,7 @@
 submission do
-  name 'Simple Lua Submission'
+  name 'Simple Perl Submission'
 
-  entities :source_file => path('main.lua'), :executable => path('main.out')
+  entities :executable => path(parameters.first || 'main.pl')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -15,18 +15,18 @@ submission do
       output specs[:output]
 
       runner TestRunner do
-        name 'Lua Runner'
+        name 'Perl Runner'
 
         add_step Proc do
-          rake_clean 'win:lua:compile', entities[:source_file], entities[:executable]
-        end
 
-        add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
-              rake_clean 'win:lua:run', entities[:executable], input
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
+              rake_clean 'win:perl:run', entities[:executable], input
+
             end
           end
+          
         end
 
       end

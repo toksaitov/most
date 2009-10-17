@@ -25,6 +25,7 @@ $LOAD_PATH.unshift(partial_path) unless $LOAD_PATH.include?(partial_path) or
                                         $LOAD_PATH.include?(full_path)
 
 require 'most/helpers/object'
+require 'most/helpers/string'
 require 'most/helpers/numeric'
 require 'most/helpers/kernel'
 require 'most/helpers/array'
@@ -38,7 +39,7 @@ require 'most/structures/submission'
 module Most
   FULL_NAME = 'Most, the Core'
   UNIX_NAME = 'most'
-  VERSION   = '0.7.5'
+  VERSION   = '0.7.6'
 
   AUTHOR = 'Toksaitov Dmitrii Alexandrovich'
 

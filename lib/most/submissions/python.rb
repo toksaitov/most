@@ -1,7 +1,7 @@
 submission do
-  name 'Simple Perl Submission'
+  name 'Simple Python Submission'
 
-  entities :executable  => path('main.pl')
+  entities :executable => path(parameters.first || 'main.py')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -15,14 +15,18 @@ submission do
       output specs[:output]
 
       runner TestRunner do
-        name 'Perl Runner'
+        name 'Python Runner'
 
         add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
-              rake_clean 'win:perl:run', entities[:executable], input
+
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
+              rake_clean 'win:python:run', entities[:executable], input
+
             end
           end
+
         end
 
       end

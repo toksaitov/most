@@ -20,17 +20,22 @@ require 'rake/clean'
 
 namespace :win do
   namespace :cs do
+    register_extension '.cs' => {:executable => '.exe', :namespace => 'win:cs'}
 
-    task :compile, :source, :needs => ['win:vs:find_vsvars'] do |task, args|
-      path = ENV['VSVARS']
+    task :compile, :source, :executable, :needs => ['win:vs:find_vsvars'] do |task, args|
+      args.with_defaults(:executable => nil)
 
-      preparation_command = path.nil? ? '' : "call \"#{path}\" &&"
-      compilation_command = %{#{preparation_command} csc /optimize+ #{args.source}}
+      if args.executable.nil? or not File.exist?(args.executable)
+        path = ENV['VSVARS']
 
-      service = Most::SERVICES[:open4]
-      service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
-        $stdout.puts(stdout.read())
-        $stderr.puts(stderr.read())
+        preparation_command = path.nil? ? '' : "call \"#{path}\" &&"
+        compilation_command = %{#{preparation_command} csc /optimize+ #{args.source}}
+
+        service = Most::SERVICES[:open4]
+        service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
+          $stdout.puts(stdout.read())
+          $stderr.puts(stderr.read())
+        end
       end
     end
 

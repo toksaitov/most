@@ -43,18 +43,16 @@ module Most
                    tests    = [],
                    options  = Options.new(),
                    entities = {}, &block)
-      @name     = name
-      @tests    = tests
-      @entities = entities
+
+      @name       = name
+      @tests      = tests
+      @entities   = entities
+      @parameters = SERVICES[:environment].
+                      options[:submission_parameters]
 
       options(options)
 
       instance_eval(&block) if block_given?
-
-      parameters = SERVICES[:environment].options[:submission_parameters]
-      unless parameters.nil? or @options.nil?
-        @options[:submission_parameters] = parameters
-      end
     end
 
     def options(*args)

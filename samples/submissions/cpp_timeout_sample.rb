@@ -1,7 +1,7 @@
 submission do
-  name 'Simple C# Submission'
+  name 'C/C++ "Timeout" Test'
 
-  entities :source_file => path('main.cs'), :executable => path('main.exe')
+  entities :source_file => path('main.cpp'), :executable  => path('main.exe')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -15,17 +15,15 @@ submission do
       output specs[:output]
 
       runner TestRunner do
-        name 'C# Runner'
+        name 'C/C++ Runner'
 
         add_step Proc do
-          rake_clean 'win:cs:compile', entities[:source_file]
+          rake_clean 'win:vc:compile', entities[:source_file]
         end
 
         add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
-              rake_clean 'win:cs:run', entities[:executable], input
-            end
+          timeouts 5.seconds do
+            rake_clean 'win:vc:run', entities[:executable], input
           end
         end
 

@@ -20,10 +20,11 @@ require 'rake/clean'
 
 namespace :win do
   namespace :ruby do
+    register_extension '.rb' => {:namespace => 'win:ruby'}
 
     task :prepare do
       ruby_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'ruby')
         ruby_home = possible_path if File.directory?(possible_path)
       end

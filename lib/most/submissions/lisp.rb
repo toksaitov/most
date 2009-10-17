@@ -1,7 +1,7 @@
 submission do
   name 'Simple Lisp Submission'
 
-  entities :executable  => path('main.lisp')
+  entities :executable => path(parameters.first || 'main.lisp')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -18,11 +18,15 @@ submission do
         name 'Lisp Runner'
 
         add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
+
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
               rake_clean 'win:lisp:run', entities[:executable], input
+
             end
           end
+
         end
 
       end

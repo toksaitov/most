@@ -18,14 +18,14 @@
 
 require 'rake/clean'
 
-CLEAN.include('*.obj')
-
 namespace :win do
   namespace :vc do
+    register_extension '.cpp' => {:executable => '.exe', :namespace => 'win:vc'}
+    register_extension '.c'   => {:executable => '.exe', :namespace => 'win:vc'}
 
     task :prepare do
       vc_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'vc')
         vc_home = possible_path if File.directory?(possible_path)
       end
@@ -43,13 +43,19 @@ namespace :win do
       ENV['CL'] = '/EHsc'
     end
 
-    task :compile, :source, :needs => [:prepare] do |task, args|
-      compilation_command = %{cl /O2 #{args.source}}
+    task :compile, :source, :executable, :needs => [:prepare] do |task, args|
+      args.with_defaults(:executable => nil)
 
-      service = Most::SERVICES[:open4]
-      service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
-        $stdout.puts(stdout.read())
-        $stderr.puts(stderr.read())
+      if args.executable.nil? or not File.exist?(args.executable)
+        CLEAN.include('*.obj')
+
+        compilation_command = %{cl /O2 #{args.source}}
+
+        service = Most::SERVICES[:open4]
+        service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
+          $stdout.puts(stdout.read())
+          $stderr.puts(stderr.read())
+        end
       end
     end
 

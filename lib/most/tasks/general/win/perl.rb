@@ -20,10 +20,11 @@ require 'rake/clean'
 
 namespace :win do
   namespace :perl do
+    register_extension '.pl' => {:namespace => 'win:perl'}
 
     task :prepare do
       perl_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'perl')
         perl_home = possible_path if File.directory?(possible_path)
       end

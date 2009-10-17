@@ -97,28 +97,28 @@ module Most
     end
 
     private
-    def timeout_with_specs(sec, klass = nil, &block)
+    def timeouts(sec, klass = nil, &block)
       @result[:limits] ||= {}
       @result[:limits][:time_limit] = sec
 
       timeout(sec, klass, &block)
     end
 
-    def memory_out_with_specs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
+    def memory_outs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
       @result[:limits] ||= {}
       @result[:limits][:memory_limit] = bytes
 
       memory_out(bytes, pid, precision, klass, &block)
     end
 
-    def virtual_memory_out_with_specs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
+    def virtual_memory_outs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
       @result[:limits] ||= {}
       @result[:limits][:virtual_memory_limit] = bytes
 
       virtual_memory_out(bytes, pid, precision, klass, &block)
     end
 
-    def total_memory_out_with_specs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
+    def total_memory_outs(bytes, pid = nil, precision = 0.1, klass = nil, &block)
       @result[:limits] ||= {}
       @result[:limits][:total_memory_limit] = bytes
 

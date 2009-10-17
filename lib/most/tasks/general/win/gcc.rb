@@ -23,7 +23,7 @@ namespace :win do
 
     task :prepare do
       gcc_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'gcc')
         gcc_home = possible_path if File.directory?(possible_path)
       end

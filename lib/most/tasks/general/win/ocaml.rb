@@ -18,15 +18,13 @@
 
 require 'rake/clean'
 
-CLEAN.include('*.cmi')
-CLEAN.include('*.cmo')
-
 namespace :win do
   namespace :ocaml do
+    register_extension '.ml' => {:executable => '.exe', :namespace => 'win:ocaml'}
 
     task :prepare do
       ocaml_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'ocaml')
         ocaml_home = possible_path if File.directory?(possible_path)
       end
@@ -42,12 +40,19 @@ namespace :win do
     end
 
     task :compile, :source, :executable, :needs => [:prepare] do |task, args|
-      compilation_command = %{ocamlc #{args.source} -o #{args.executable}}
+      args.with_defaults(:executable => nil)
 
-      service = Most::SERVICES[:open4]
-      service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
-        $stdout.puts(stdout.read())
-        $stderr.puts(stderr.read())
+      if args.executable.nil? or not File.exist?(args.executable)
+        CLEAN.include('*.cmi')
+        CLEAN.include('*.cmo')
+
+        compilation_command = %{ocamlc #{args.source} -o #{args.executable}}
+
+        service = Most::SERVICES[:open4]
+        service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
+          $stdout.puts(stdout.read())
+          $stderr.puts(stderr.read())
+        end
       end
     end
 

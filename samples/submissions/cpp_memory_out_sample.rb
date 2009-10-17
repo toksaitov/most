@@ -1,7 +1,7 @@
 submission do
-  name 'Simple PHP Submission'
+  name 'C/C++ "MemoryOut" Test'
 
-  entities :executable  => path('main.php')
+  entities :source_file => path('main.cpp'), :executable  => path('main.exe')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -15,13 +15,15 @@ submission do
       output specs[:output]
 
       runner TestRunner do
-        name 'PHP Runner'
+        name 'C/C++ Runner'
 
         add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
-              rake_clean 'win:php:run', entities[:executable], input
-            end
+          rake_clean 'win:vc:compile', entities[:source_file]
+        end
+
+        add_step Proc do
+          total_memory_outs 10.megabytes do
+            rake_clean 'win:vc:run', entities[:executable], input
           end
         end
 

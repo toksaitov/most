@@ -1,7 +1,7 @@
 submission do
-  name 'Simple Java Submission'
+  name 'Simple Brainf Submission'
 
-  entities :source_file => path('Main.java'), :executable  => path('Main')
+  entities :executable => path(parameters.first || 'main.b')
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
@@ -15,18 +15,18 @@ submission do
       output specs[:output]
 
       runner TestRunner do
-        name 'Java Runner'
+        name 'Brainf Runner'
 
         add_step Proc do
-          rake_clean 'win:java:compile', entities[:source_file]
-        end
 
-        add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
-              rake_clean 'win:java:run', entities[:executable], input
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
+              rake_clean 'win:brainf:run', entities[:executable], input
+
             end
           end
+
         end
 
       end

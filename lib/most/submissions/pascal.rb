@@ -1,11 +1,14 @@
 submission do
   name 'Simple Pascal Submission'
 
-  entities :source_file => path('main.pas'), :executable => path('main.exe')
+  entities :source => path(parameters.first || 'main.pas'),
+           :executable => path((parameters.first || 'main').to_extension('.exe'))
 
   options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
 
+  rm entities[:executable], :force => true
+  
   YAML.load_file('tests.yml').each_with_index do |specs, i|
 
     add_test TestCase do
@@ -18,15 +21,20 @@ submission do
         name 'Pascal Runner'
 
         add_step Proc do
-          rake_clean 'win:pascal:compile', entities[:source_file]
+          rake_clean 'win:pascal:compile', entities[:source],
+                                           entities[:executable]
         end
 
         add_step Proc do
-          timeout_with_specs specs[:time] do
-            total_memory_out_with_specs specs[:memory] do
+
+          timeouts specs[:time] do
+            total_memory_outs specs[:memory] do
+
               rake_clean 'win:pascal:run', entities[:executable], input
+              
             end
           end
+
         end
 
       end

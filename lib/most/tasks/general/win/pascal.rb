@@ -18,14 +18,13 @@
 
 require 'rake/clean'
 
-CLEAN.include('*.o')
-
 namespace :win do
   namespace :pascal do
+    register_extension '.pas' => {:executable => '.exe', :namespace => 'win:pascal'}
 
     task :prepare do
       pascal_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'pascal')
         pascal_home = possible_path if File.directory?(possible_path)
       end
@@ -38,12 +37,18 @@ namespace :win do
     end
 
     task :compile, :source, :executable, :needs => [:prepare] do |task, args|
-      compilation_command = %{fpc -O3 -Mobjfpc #{args.source}}
+      args.with_defaults(:executable => nil)
 
-      service = Most::SERVICES[:open4]
-      service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
-        $stdout.puts(stdout.read())
-        $stderr.puts(stderr.read())
+      if args.executable.nil? or not File.exist?(args.executable)
+        CLEAN.include('*.o')
+
+        compilation_command = %{fpc -O3 -Mobjfpc #{args.source}}
+
+        service = Most::SERVICES[:open4]
+        service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
+          $stdout.puts(stdout.read())
+          $stderr.puts(stderr.read())
+        end
       end
     end
 

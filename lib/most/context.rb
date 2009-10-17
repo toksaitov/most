@@ -21,49 +21,49 @@ require 'most/di/container'
 module Most
   DIRECTORIES = DI::Container.new do
     asset :user_base do
-      path = File.expand_path(USER_BASE_DIRECTORY)
-
-      Dir.mkdir(path) unless File.directory?(path)
-
-      path
+      prepare_directory(USER_BASE_DIRECTORY)
     end
 
     asset :submissions do
-      paths = []
+      File.expand_path(File.join(File.dirname(__FILE__), 'submissions'))
+    end
 
-      paths << File.expand_path(File.join(File.dirname(__FILE__), 'submissions'))
-      paths << File.expand_path(File.join(DIRECTORIES[:user_base], 'submissions'))
+    asset :user_submissions do
+      prepare_directory(File.join(DIRECTORIES[:user_base], 'submissions'))
+    end
 
-      Dir.mkdir(paths.last) unless File.directory?(paths.last) rescue nil
-
-      paths
+    asset :all_submissions do
+      [DIRECTORIES[:submissions],
+       DIRECTORIES[:user_submissions]]
     end
 
     asset :tasks do
-      paths = []
+      File.expand_path(File.join(File.dirname(__FILE__), 'tasks'))
+    end
 
-      paths << File.expand_path(File.join(File.dirname(__FILE__), 'tasks'))
-      paths << File.expand_path(File.join(DIRECTORIES[:user_base], 'tasks'))
+    asset :user_tasks do
+      prepare_directory(File.join(DIRECTORIES[:user_base], 'tasks'))
+    end
 
-      Dir.mkdir(paths.last) unless File.directory?(paths.last) rescue nil
-
-      paths
+    asset :all_tasks do
+      [DIRECTORIES[:tasks],
+       DIRECTORIES[:user_tasks]]
     end
 
     asset :vendors do
-      path = File.expand_path(File.join(DIRECTORIES[:user_base], 'vendors'))
+      prepare_directory(File.join(DIRECTORIES[:user_base], 'vendors'))
+    end
 
-      Dir.mkdir(path) unless File.directory?(path) rescue nil
+    asset :all_vendors do
+      [DIRECTORIES[:vendors]]
+    end
 
-      result = path.nil? ? [] : path.to_a()
+    asset :problems do
+      prepare_directory(File.join(DIRECTORIES[:user_base], 'problems'))
     end
 
     asset :temp do
-      path = File.expand_path(File.join(DIRECTORIES[:user_base], 'temp'))
-
-      Dir.mkdir(path) unless File.directory?(path) rescue nil
-
-      result = path.nil? ? [] : path.to_a()
+      prepare_directory(File.join(DIRECTORIES[:user_base], 'temp'))
     end
   end
 

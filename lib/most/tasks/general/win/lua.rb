@@ -20,10 +20,11 @@ require 'rake/clean'
 
 namespace :win do
   namespace :lua do
+    register_extension '.lua' => {:executable => '.out', :namespace => 'win:lua'}
 
     task :prepare do
       lua_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'lua')
         lua_home = possible_path if File.directory?(possible_path)
       end
@@ -40,12 +41,16 @@ namespace :win do
     end
 
     task :compile, :source, :executable, :needs => [:prepare] do |task, args|
-      compilation_command = %{luac -o #{args.executable} #{args.source}}
+      args.with_defaults(:executable => nil)
 
-      service = Most::SERVICES[:open4]
-      service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
-        $stdout.puts(stdout.read())
-        $stderr.puts(stderr.read())
+      if args.executable.nil? or not File.exist?(args.executable)
+        compilation_command = %{luac -o #{args.executable} #{args.source}}
+
+        service = Most::SERVICES[:open4]
+        service.popen4(compilation_command) do |stdin, stdout, stderr, pid|
+          $stdout.puts(stdout.read())
+          $stderr.puts(stderr.read())
+        end
       end
     end
 

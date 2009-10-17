@@ -19,6 +19,42 @@
 require 'stringio'
 
 module Kernel
+  def prepare_directory(path)
+    path = File.expand_path(path)
+
+    Dir.mkdir(path) unless File.directory?(path) rescue nil
+    
+    path
+  end
+
+  def register_extension(options)
+    Most::GLOBALS[:extensions] ||= {}
+    Most::GLOBALS[:extensions].update(options) if options.is_a?(Hash)
+  end
+
+  def source_extension(file_name)
+    File.extname(file_name)
+  end
+
+  def exec_extension(file_name)
+    result = nil
+
+    Most::GLOBALS[:extensions] ||= {}
+    result = Most::GLOBALS[:extensions][source_extension(file_name)].try(:[], :executable)
+
+    result || ''
+  end
+
+  def extension_namespace(identifier)
+    result = nil
+
+    Most::GLOBALS[:extensions] ||= {}
+    result = Most::GLOBALS[:extensions][source_extension(identifier)].try(:[], :namespace) ||
+             Most::GLOBALS[:extensions][identifier].try(:[], :namespace)
+    
+    result || ''
+  end
+
   def fake_std()
     result = [StringIO.new(), StringIO.new()]
 

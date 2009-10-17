@@ -20,10 +20,11 @@ require 'rake/clean'
 
 namespace :win do
   namespace :python do
+    register_extension '.py' => {:namespace => 'win:python'}
 
     task :prepare do
       python_home = nil
-      Most::DIRECTORIES[:vendors].each do |directory|
+      Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'python')
         python_home = possible_path if File.directory?(possible_path)
       end

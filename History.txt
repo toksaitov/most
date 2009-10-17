@@ -1,3 +1,6 @@
+== 0.7.5 2009-27-12
+* Fixed dependencies problem on *nix
+
 == 0.7.4 2009-26-12
 * Now it is possible to load the Most library in order to get an ability to load serialized reports
     require 'most'
