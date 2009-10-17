@@ -4,108 +4,8 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="Added">
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\custom_delphi_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/testlib.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lisp\main.lisp" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lisp/main.lisp" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\ocaml_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/ocaml.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/vc.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/vc.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\brainf\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/brainf/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\python_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/python.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/array.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/array.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/php.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/php.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/lisp.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/lisp.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ruby\main.rb" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ruby/main.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ruby\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ruby/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\shuffle.exe" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/shuffle.exe" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\java\Main.java" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/java/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/submissions/generic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/TDA.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/TDA.xml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cpp_timeout_sample.rb" afterPath="$PROJECT_DIR$/samples/submissions/cpp_timeout_sample.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\haskell_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/haskell.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\time_memory\solutions\cpp\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/time_and_memory_out/cpp/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\ones_rs.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/ones_rs.dpr" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\pascal\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/pascal/tests.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/cs.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/cs.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/most.gemspec" afterPath="$PROJECT_DIR$/most.gemspec" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\pascal\main.pas" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/pascal/main.pas" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\python\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/python/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\delphi\main.dpr" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/delphi/main.dpr" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cs\main.cs" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cs/main.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Bootup.iml" afterPath="$PROJECT_DIR$/.idea/Bootup.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/perl.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/perl.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cpp\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cpp/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\delphi\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/delphi/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\php\main.php" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/php/main.php" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cs_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cs.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/python.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/python.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/brainf.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\make_answers.bat" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/make_answers.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/kernel.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/kernel.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/ruby.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/ruby.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/gcc.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/gcc.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most.rb" afterPath="$PROJECT_DIR$/lib/most.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/spellchecker.xml" afterPath="$PROJECT_DIR$/.idea/spellchecker.xml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\java_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/java.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\pascal_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/pascal.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\vb_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/vb.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\ones_rs.exe" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/ones_rs.exe" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\perl\main.pl" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/perl/main.pl" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\problem.xml" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/problem.xml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\make.bat" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/make.bat" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\clean.bat" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/clean.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/java.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/java.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lisp\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lisp/tests.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/lua.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/lua.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/box.rb" afterPath="$PROJECT_DIR$/lib/most/structures/box.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/core.rb" afterPath="$PROJECT_DIR$/lib/most/core.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/ocaml.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/ocaml.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cpp\main.cpp" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cpp/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/erlang.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/erlang.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\java\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/java/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\php_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/php.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/submissions/brainf.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lua\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lua/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\php\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/php/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\tests.lst" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/tests.lst" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\cs\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cs/tests.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/History.txt" afterPath="$PROJECT_DIR$/History.txt" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\brainf\main.b" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/brainf/main.b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/haskell.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/haskell.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\tests\shuffle.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/tests/shuffle.dpr" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cpp_memory_out_sample.rb" afterPath="$PROJECT_DIR$/samples/submissions/cpp_memory_out_sample.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\lisp_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/lisp.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\vb\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/vb/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\python\main.py" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/python/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/submission.rb" afterPath="$PROJECT_DIR$/lib/most/structures/submission.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\ruby_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/ruby.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/samples.rb" afterPath="$PROJECT_DIR$/tasks/samples.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\cpp_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cpp.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\lua\main.lua" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/lua/main.lua" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\haskell\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/haskell/tests.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/context.rb" afterPath="$PROJECT_DIR$/lib/most/context.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/helpers/string.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\ones_is.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/ones_is.dpr" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\time_memory\solutions\cpp\main.cpp" afterPath="$PROJECT_DIR$/samples/problems/time_and_memory_out/cpp/main.cpp" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\erlang\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/erlang/tests.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/starter.rb" afterPath="$PROJECT_DIR$/lib/most/starter.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\haskell\main.hs" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/haskell/main.hs" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\borland_delphi_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/delphi.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\custom\ones\check.dpr" afterPath="$PROJECT_DIR$/samples/problems/testlib/ones/check.dpr" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ocaml\main.ml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ocaml/main.ml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\ocaml\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/ocaml/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\perl_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/perl.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\tasks\general\win\borland_delphi.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/delphi.rb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\perl\tests.yml" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/perl/tests.yml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\vb\main.vb" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/vb/main.vb" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\samples\problem\solutions\erlang\main.erl" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/erlang/main.erl" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\erlang_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/erlang.rb" />
+    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="C:\development\Projects\Most\Dev\Bootup\most\lib\most\submissions\lua_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/lua.rb" />
     </list>
     <ignored path="../.idea/" />
     <ignored path="Bootup.iws" />
@@ -226,7 +126,7 @@
       <file leaf-file-name="generic.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.53488374">
+            <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.8197065">
               <folding />
             </state>
           </provider>
@@ -248,6 +148,7 @@
         <option value="Toksaitov Dmitriy Alexandrovich" />
       </array>
     </option>
+    <option name="LINE_SEPARATORS_CONVERSION_ASK" value="false" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -2005,13 +1906,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29809222" sideWeight="0.668942" order="1" side_tool="true" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20028208" sideWeight="0.63672394" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20028208" sideWeight="0.664465" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37252313" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35402906" sideWeight="0.5" order="2" side_tool="false" />
@@ -2019,7 +1921,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747254" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="10" side_tool="false" x="11" y="349" width="1258" height="286" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
@@ -2037,7 +1938,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Borland Delphi Rake task and sample submission, added nifty stdout output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generic Submissions. Lazy compiler execution." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -2071,6 +1972,7 @@
     <MESSAGE value="YAML deserialization of the report" />
     <MESSAGE value="Corrected .gemspec" />
     <MESSAGE value="Added Borland Delphi Rake task and sample submission, added nifty stdout output" />
+    <MESSAGE value="Generic Submissions. Lazy compiler execution." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2245,7 +2147,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.53488374">
+        <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.8197065">
           <folding />
         </state>
       </provider>
