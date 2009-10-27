@@ -2,8 +2,9 @@ Copying.txt
 History.txt
 Manifest.txt
 PostInstall.txt
+README.rdoc
+README.txt
 Rakefile
-Readme.rdoc
 bin/most
 lib/most.rb
 lib/most/context.rb

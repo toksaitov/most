@@ -36,7 +36,7 @@ require 'most/interfaces/meta_programmable'
 module Most
   FULL_NAME = 'Most, the Core'
   UNIX_NAME = 'most'
-  VERSION   = '0.7.3'
+  VERSION   = '0.7.4'
 
   AUTHOR = 'Toksaitov Dmitrii Alexandrovich'
 

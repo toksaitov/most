@@ -32,6 +32,8 @@ $hoe = Hoe.spec Most::UNIX_NAME do
   self.developer Most::AUTHOR, Most::EMAIL
   self.post_install_message = File.read('PostInstall.txt')
 
+  self.readme_file = 'README.txt'
+
   self.extra_deps = [['sys-proctable', '>= 0.9.0'],
                      ['open4', '>= 1.0.1'],
                      ['win32-open3', '>= 0.3.1']]

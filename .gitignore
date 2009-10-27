@@ -1,3 +1,8 @@
 .idea
 pkg
 doc
+.DS_Store
+tmp
+*.log
+.test-result
+*.gem

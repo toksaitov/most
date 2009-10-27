@@ -1,3 +1,13 @@
+== 0.7.4 2009-26-11
+* Fixed minor Gem problems
+* The "Numeric" class was extended with the following useful methods for the "MemoryOut" module:
+ * Numeric#bytes,
+ * Numeric#kilobytes,
+ * Numeric#megabytes,
+ * Numeric#megabytes,
+ * Numeric#petabytes.
+* Added "MemoryOut" module to enable memory checks in tests
+
 == 0.7.3 2009-23-11
 
 * The "Numeric" class was extended with the following useful methods for the "Timeout" module:
