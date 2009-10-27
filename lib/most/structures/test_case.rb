@@ -66,8 +66,7 @@ module Most
       if options[:tests/:report/:specs]
         result.specs = {:name => @name,
                         :correct_output => @output,
-                        :output_destination  => @output_destination,
-                        :output_preprocessor => @output_preprocessor,
+                        :output_destination => @output_destination,
                         :runner => @runner}
       end
 
