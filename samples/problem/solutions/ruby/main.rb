@@ -1,0 +1,1 @@
+puts(gets.split.map do |x| x.to_i() end.inject() do |x, y| x + y end)

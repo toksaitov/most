@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-#
 #    Most - Modular Open Software Tester.
 #    Copyright (C) 2009  Dmitrii Toksaitov
 #
@@ -18,14 +16,24 @@
 #    You should have received a copy of the GNU General Public License
 #    along with Most. If not, see <http://www.gnu.org/licenses/>.
 
-begin
-  require(File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'most')))
+require 'yaml'
 
-  Most::SERVICES[:starter].run()
+module Most
 
-  exit_code = Most::GLOBALS[:exit_code] || 0
-rescue Exception => e
-  exit_code = 1; puts "Fatal error: #{e.message}", e.backtrace
+  module PathHelpers
+    def path(path)
+      Path.new(path)
+    end
+  end
+
+  class Path < String
+    def initialize(path = '')
+      super(path)
+    end
+
+    def expand_path()
+      File.expand_path(self)
+    end
+  end
+
 end
-
-exit!(exit_code)

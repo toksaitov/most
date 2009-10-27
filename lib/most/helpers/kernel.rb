@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-#
 #    Most - Modular Open Software Tester.
 #    Copyright (C) 2009  Dmitrii Toksaitov
 #
@@ -18,14 +16,20 @@
 #    You should have received a copy of the GNU General Public License
 #    along with Most. If not, see <http://www.gnu.org/licenses/>.
 
-begin
-  require(File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'most')))
+require 'stringio'
 
-  Most::SERVICES[:starter].run()
+module Kernel
+  def fake_std()
+    result = [StringIO.new(), StringIO.new()]
 
-  exit_code = Most::GLOBALS[:exit_code] || 0
-rescue Exception => e
-  exit_code = 1; puts "Fatal error: #{e.message}", e.backtrace
+    $stdout = result.first()
+    $stderr = result.last()
+
+    yield if block_given?
+
+    return result
+  ensure
+    $stdout = STDOUT
+    $stderr = STDERR
+  end
 end
-
-exit!(exit_code)

@@ -38,7 +38,11 @@ notes for the list of supplied modules.
 
 == Features:
 
-* In development...
+* Test-agnostic cross-platform testing application and library
+* Ruby domain specific language (DSL) interface for test specifications
+* YAML support for test specs and test reports
+* Support of 16 languages out of the box with the predefined Rake Task bundles for compilation and execution
+* Bundled sample test specifications for each language, which can help you to write your own specs
 
 == Requirements
 
@@ -46,12 +50,14 @@ notes for the list of supplied modules.
 
 === Extra Dependencies
 
-* activesupport (version 1.0.0 or later)
+* sys-proctable (version 0.9.0 or later)
+
+* open4 (version 1.0.1 or later) for *nix operation systems
+* win32-open3 (version 0.3.1 or later) for Windows 2000 or later operation systems
 
 === Extra Development Dependencies
 
-* newgem (version 1.4.1 or later)
-* cucumber (version 0.3.11 or later)
+* newgem (version 1.5.1 or later)
 
 == Installation
 
@@ -62,9 +68,8 @@ the Gem file. For this you will need to have RubyGems installed.
 If you have it, then you can install the system in the following way:
 
     gem install most
-    gem install most --include-dependencies
 
-Note that you must have correspondent account privileges
+Note that you must have the correspondent account privileges
 on your system in order to use this commands.
 
 For other software bundles (including links for the source code packages)
@@ -75,22 +80,20 @@ consider visiting the official page of the project.
 == Synopsis
 
 Most can be used as a standalone command line application
-or as a library. Due to the modular nature of the system please
-consider to read documentation provided with each interface implementation.
+or as a library.
 
 === Library Usage
 
-To get access to the core interface of the system you need to call
-the +init+ method first:
+To get access to the core interface of the system you need to access
+the +Core+ class by specifying its name to the +SERVICES+ dependency injection (DI) container:
 
     require 'most'
 
-    most_controller = Most.init
+    most_core = Most::SERVICES[:core]
 
-If the initialization went well, the +init+ method will return a reference to
-the new +MostController+ instance through which you can control the entire
+This will return a reference to the new +Core+ instance through which you can control the entire
 testing system.
-
+    
 === Configuration
 
 The default path for the configuration files is the <em>.most</em> directory under
@@ -98,8 +101,7 @@ the system user's home folder.
 
 === Command Line Usage
 
-The list of command line options can be found in the system documentation
-or it can be obtained from the Most executable by one of the following calls:
+The list of command line options can be obtained from the Most executable by one of the following calls:
 
     most -h
     most --help
@@ -121,7 +123,7 @@ The public git clone URL is
 
 == Additional Information
 
-Author:: Toksaitov Dmitriy Alexandrovich <toksaitov.d@gmail.com>
+Author:: Toksaitov Dmitrii Alexandrovich <toksaitov.d@gmail.com>
 
 Project web site:: http://85.17.184.9/most
 Project forum:: http://groups.google.com/group/most-system
@@ -131,7 +133,7 @@ Project forum:: http://groups.google.com/group/most-system
 (The GNU General Public License)
 
 Most is a simple academic modular open software tester.
-Copyright (C) 2009 Toksaitov Dmitriy Alexandrovich
+Copyright (C) 2009 Toksaitov Dmitrii Alexandrovich
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -142,6 +144,3 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses>.

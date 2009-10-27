@@ -1,0 +1,1 @@
+<?php echo array_sum(explode(" ", fgets(fopen('php://stdin', 'r')))); ?>
