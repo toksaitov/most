@@ -33,10 +33,12 @@ require 'most/helpers/hash'
 
 require 'most/interfaces/meta_programmable'
 
+require 'most/structures/submission'
+
 module Most
   FULL_NAME = 'Most, the Core'
   UNIX_NAME = 'most'
-  VERSION   = '0.7.4'
+  VERSION   = '0.7.5'
 
   AUTHOR = 'Toksaitov Dmitrii Alexandrovich'
 

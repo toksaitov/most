@@ -3,7 +3,7 @@ submission do
 
   entities :source_file => path('main.cpp'), :executable  => path('main.exe')
 
-  options  :tests => {:report => {:differences => true, :time => true, :specs => true},
+  options  :tests => {:report => {:differences => true, :time => true, :specs => false},
                       :steps  => {:break => {:unsuccessful => true}}}
 
   YAML.load_file('tests.yml').each_with_index do |specs, i|

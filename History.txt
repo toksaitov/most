@@ -1,3 +1,8 @@
+== 0.7.4 2009-26-12
+* Now it is possible to load the Most library in order to get an ability to load serialized reports
+    require 'most'
+    report = YAML.load_file('report.yml')
+
 == 0.7.4 2009-26-11
 * Fixed minor Gem problems
 * The "Numeric" class was extended with the following useful methods for the "MemoryOut" module:

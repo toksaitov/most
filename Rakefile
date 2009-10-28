@@ -29,9 +29,10 @@ Hoe.plugin :newgem
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
 $hoe = Hoe.spec Most::UNIX_NAME do
+  self.version = Most::VERSION
   self.developer Most::AUTHOR, Most::EMAIL
-  self.post_install_message = File.read('PostInstall.txt')
 
+  self.post_install_message = File.read('PostInstall.txt')
   self.readme_file = 'README.txt'
 
   self.extra_deps = [['sys-proctable', '>= 0.9.0'],
