@@ -4,13 +4,8 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="Project files from &quot;.idea&quot;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/cpp_sample.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/cpp_sample.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most.rb" afterPath="$PROJECT_DIR$/lib/most.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Bootup.iml" afterPath="$PROJECT_DIR$/.idea/Bootup.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/History.txt" afterPath="$PROJECT_DIR$/History.txt" />
+    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/most.gemspec" afterPath="$PROJECT_DIR$/most.gemspec" />
     </list>
     <ignored path="../.idea/" />
     <ignored path="Bootup.iws" />
@@ -100,7 +95,7 @@
       <file leaf-file-name="History.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/History.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="16" selection-start="136" selection-end="136" vertical-scroll-proportion="0.06367041">
+            <state line="6" column="26" selection-start="228" selection-end="228" vertical-scroll-proportion="0.19101124">
               <folding />
             </state>
           </provider>
@@ -1193,7 +1188,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747254" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265074" sideWeight="0.5" order="8" side_tool="false" />
@@ -1203,7 +1198,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24562798" sideWeight="0.6370876" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37542662" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35494882" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35494882" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32536975" sideWeight="0.5" order="9" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
@@ -1225,7 +1220,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project files from &quot;.idea&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="YAML deserialization of the report" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1256,6 +1251,7 @@
     <MESSAGE value="Gem README.txt fix" />
     <MESSAGE value="Removed &quot;.idea&quot; from &quot;.gitignore&quot;" />
     <MESSAGE value="Project files from &quot;.idea&quot;" />
+    <MESSAGE value="YAML deserialization of the report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1402,7 +1398,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/History.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="136" selection-end="136" vertical-scroll-proportion="0.06367041">
+        <state line="6" column="26" selection-start="228" selection-end="228" vertical-scroll-proportion="0.19101124">
           <folding />
         </state>
       </provider>
