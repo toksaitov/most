@@ -16,11 +16,13 @@ lib/most/di/service_factory.rb
 lib/most/environment.rb
 lib/most/executor.rb
 lib/most/helpers/array.rb
+lib/most/helpers/file.rb
 lib/most/helpers/hash.rb
 lib/most/helpers/kernel.rb
 lib/most/helpers/memory_out.rb
 lib/most/helpers/numeric.rb
 lib/most/helpers/object.rb
+lib/most/helpers/open4.rb
 lib/most/helpers/string.rb
 lib/most/helpers/symbol.rb
 lib/most/interfaces/meta_programmable.rb

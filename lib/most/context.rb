@@ -21,7 +21,7 @@ require 'most/di/container'
 module Most
   DIRECTORIES = DI::Container.new do
     asset :user_base do
-      prepare_directory(USER_BASE_DIRECTORY)
+      File.prepare_directory(USER_BASE_DIRECTORY)
     end
 
     asset :submissions do
@@ -29,7 +29,7 @@ module Most
     end
 
     asset :user_submissions do
-      prepare_directory(File.join(DIRECTORIES[:user_base], 'submissions'))
+      File.prepare_directory(File.join(DIRECTORIES[:user_base], 'submissions'))
     end
 
     asset :all_submissions do
@@ -42,7 +42,7 @@ module Most
     end
 
     asset :user_tasks do
-      prepare_directory(File.join(DIRECTORIES[:user_base], 'tasks'))
+      File.prepare_directory(File.join(DIRECTORIES[:user_base], 'tasks'))
     end
 
     asset :all_tasks do
@@ -51,7 +51,7 @@ module Most
     end
 
     asset :vendors do
-      prepare_directory(File.join(DIRECTORIES[:user_base], 'vendors'))
+      File.prepare_directory(File.join(DIRECTORIES[:user_base], 'vendors'))
     end
 
     asset :all_vendors do
@@ -59,11 +59,11 @@ module Most
     end
 
     asset :problems do
-      prepare_directory(File.join(DIRECTORIES[:user_base], 'problems'))
+      File.prepare_directory(File.join(DIRECTORIES[:user_base], 'problems'))
     end
 
     asset :temp do
-      prepare_directory(File.join(DIRECTORIES[:user_base], 'temp'))
+      File.prepare_directory(File.join(DIRECTORIES[:user_base], 'temp'))
     end
   end
 
@@ -147,7 +147,6 @@ module Most
         require 'logger'
 
         logger = Logger.new(FILES[:log], 10, 1048576)
-
         logger.level = Logger::INFO
 
         logger
@@ -180,8 +179,14 @@ module Most
 
     service :open4 do
       on_creation do
-        if RUBY_PLATFORM.downcase.include?("mswin")
-          require 'win32/open3'; Open4
+        platform = RUBY_PLATFORM.downcase
+
+        if platform.include?("mswin") or platform.include?("mingw")
+          if RUBY_VERSION =~ /^1\.8.*/
+            require 'win32/open3'; Open4
+          else
+            require 'most/helpers/open4'; Open4
+          end
         else
           require 'open4'; Open4
         end

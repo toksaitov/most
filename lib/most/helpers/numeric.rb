@@ -56,9 +56,4 @@ class Numeric
   def petabytes()
     self * 1099511627776
   end
-
-  def w()
-    result = ''; 1.upto(self) do result += ' ' end
-    result
-  end
 end

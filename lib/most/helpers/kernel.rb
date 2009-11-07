@@ -19,14 +19,6 @@
 require 'stringio'
 
 module Kernel
-  def prepare_directory(path)
-    path = File.expand_path(path)
-
-    Dir.mkdir(path) unless File.directory?(path) rescue nil
-    
-    path
-  end
-
   def register_extension(options)
     Most::GLOBALS[:extensions] ||= {}
     Most::GLOBALS[:extensions].update(options) if options.is_a?(Hash)

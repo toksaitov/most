@@ -46,8 +46,8 @@ module Most
     end
 
     def run(options, entities, input)
-      SERVICES[:environment].state("#{4.w}Processing test runner #{@name}")
-      SERVICES[:environment].state("#{4.w}Number of steps: #{@steps.size}")
+      SERVICES[:environment].state("#{' ' * 4}Processing test runner #{@name}")
+      SERVICES[:environment].state("#{' ' * 4}Number of steps: #{@steps.size}")
 
       result = Report.new("Test Runner: #{@name}")
 
@@ -58,7 +58,7 @@ module Most
 
       result << execute(options, entities, input)
       
-      SERVICES[:environment].state("#{4.w}|--> Test run successful?: #{result.last[:success]}")
+      SERVICES[:environment].state("#{' ' * 4}|--> Test run successful?: #{result.last[:success]}")
 
       result
     end

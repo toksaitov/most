@@ -5,6 +5,7 @@
       <w>ICPC</w>
       <w>args</w>
       <w>attr</w>
+      <w>backtrace</w>
       <w>basename</w>
       <w>borland</w>
       <w>brainf</w>
@@ -12,6 +13,7 @@
       <w>clibs</w>
       <w>delphi</w>
       <w>deps</w>
+      <w>desc</w>
       <w>deserialize</w>
       <w>dirname</w>
       <w>downcase</w>
@@ -34,6 +36,7 @@
       <w>perl</w>
       <w>popen</w>
       <w>preprocessor</w>
+      <w>rakefile</w>
       <w>readme</w>
       <w>reenable</w>
       <w>rubyforge</w>

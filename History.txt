@@ -1,19 +1,20 @@
-== 0.7.7 2009-29-11
-* Added generic submission
+== 0.7.7 2009-29-10
+* Ruby 1.9 support
+* Added 'generic' submission
 * File specification is now possible in all standard submissions
 
-== 0.7.6 2009-28-11
+== 0.7.6 2009-28-10
 * Added Brainf submissions and task
 
-== 0.7.5 2009-27-11
+== 0.7.5 2009-27-10
 * Fixed dependencies problem on *nix
 
-== 0.7.4 2009-26-11
+== 0.7.4 2009-26-10
 * Now it is possible to load the Most library in order to get an ability to load serialized reports
     require 'most'
     report = YAML.load_file('report.yml')
 
-== 0.7.4 2009-26-11
+== 0.7.4 2009-26-10
 * Fixed minor Gem problems
 * The "Numeric" class was extended with the following useful methods for the "MemoryOut" module:
  * Numeric#bytes,
@@ -23,7 +24,7 @@
  * Numeric#petabytes.
 * Added "MemoryOut" module to enable memory checks in tests
 
-== 0.7.3 2009-23-11
+== 0.7.3 2009-23-10
 
 * The "Numeric" class was extended with the following useful methods for the "Timeout" module:
  * Numeric#milliseconds,

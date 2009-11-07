@@ -33,8 +33,8 @@ namespace :win do
         bin_path      = File.join(erlang_home, 'bin')
         erts_bin_path = File.join(erlang_home, 'erts', 'bin')
 
-        ini_files = [File.join(bin_path, 'erl.ini').gsub(/[\/|\\]/, '\\\\\\\\'),
-                     File.join(erts_bin_path, 'erl.ini').gsub(/[\/|\\]/, '\\\\\\\\')]
+        ini_files = [File.join(bin_path, 'erl.ini').gsub(/[\/|\\]/, '\\' * 8),
+                     File.join(erts_bin_path, 'erl.ini').gsub(/[\/|\\]/, '\\' * 8)]
 
         ENV['PATH'] ||= ''; ENV['PATH'] = "#{bin_path};#{ENV['PATH']}"
 

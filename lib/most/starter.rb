@@ -66,6 +66,8 @@ module Most
           @environment.log_error(e, 'Command line interface failure')
         end
       end
+
+      Most::GLOBALS[:exit_code] || 0
     end
 
     def options()

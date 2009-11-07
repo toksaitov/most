@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-#
 #    Most - Modular Open Software Tester.
 #    Copyright (C) 2009  Dmitrii Toksaitov
 #
@@ -18,12 +16,12 @@
 #    You should have received a copy of the GNU General Public License
 #    along with Most. If not, see <http://www.gnu.org/licenses/>.
 
-begin
-  require(File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'most')))
+class File
+  def self.prepare_directory(path)
+    path = File.expand_path(path)
 
-  status = Most::SERVICES[:starter].run()
-rescue Exception => e
-  status = 1; puts "Fatal error: #{e.message}", e.backtrace
+    Dir.mkdir(path) unless File.directory?(path) rescue nil
+
+    path
+  end
 end
-
-exit!(status)

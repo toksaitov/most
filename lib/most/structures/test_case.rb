@@ -61,7 +61,7 @@ module Most
     end
 
     def run(options, entities)
-      SERVICES[:environment].state("#{2.w}Processing test case: #{@name}")
+      SERVICES[:environment].state("#{' ' * 2}Processing test case: #{@name}")
 
       result = Report.new("Test Case: #{@name}")
 
@@ -75,7 +75,7 @@ module Most
       result << process(options, entities)
 
       correct_status = result.last.last[:correct]; correct_status ||= false
-      message = "#{2.w}|--> Test case '#{@name}' correct?: #{correct_status}"
+      message = "#{' ' * 2}|--> Test case '#{@name}' correct?: #{correct_status}"
 
       SERVICES[:environment].show_message(message)
 

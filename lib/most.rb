@@ -28,6 +28,7 @@ require 'most/helpers/object'
 require 'most/helpers/string'
 require 'most/helpers/numeric'
 require 'most/helpers/kernel'
+require 'most/helpers/file'
 require 'most/helpers/array'
 require 'most/helpers/symbol'
 require 'most/helpers/hash'
@@ -49,6 +50,7 @@ module Most
   COPYRIGHT = "Copyright (C) 2009 #{AUTHOR}"
 
   USER_BASE_DIRECTORY = ENV['MOST_USER_BASE'] || File.join('~', ".#{UNIX_NAME}")
+
   GLOBALS = {}
 end
 

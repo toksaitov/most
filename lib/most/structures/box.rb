@@ -77,8 +77,8 @@ module Most
     end
 
     def run(step)
-      SERVICES[:environment].state("#{6.w}Executing a test box #{object_id}")
-      SERVICES[:environment].state("#{6.w}Step type: #{step.class}")
+      SERVICES[:environment].state("#{' ' * 6}Executing a test box #{object_id}")
+      SERVICES[:environment].state("#{' ' * 6}Step type: #{step.class}")
 
       result = Report.new("Box: #{object_id}")
 
@@ -91,7 +91,7 @@ module Most
 
       result << execute(step)
       
-      SERVICES[:environment].state("#{6.w}|--> Finished.")
+      SERVICES[:environment].state("#{' ' * 6}|--> Finished.")
 
       result
     end

@@ -7,6 +7,12 @@ module Most
     CALLER_OFFSET = ((c = caller[0]) && THIS_FILE =~ c) ? 1 : 0
 
     def generic_memory_out(bytes, pid = nil, precision = 0.1, klass = nil, checking_proc = method(:memory), &block)
+      if RUBY_VERSION =~ /^1\.9.*/
+        SERVICES[:environment].log_message('Memory checking is not supported on Ruby 1.9.*')
+
+        return yield if block_given?
+      end
+
       return yield if bytes.nil? and block_given?
 
       current_thread = nil

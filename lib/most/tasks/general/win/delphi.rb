@@ -23,6 +23,8 @@ namespace :win do
     register_extension '.dpr' => {:executable => '.exe', :namespace => 'win:delphi'}
 
     task :prepare do
+      CLEAN.include('~*.*')
+
       borland_delphi_home = nil
       Most::DIRECTORIES[:all_vendors].each do |directory|
         possible_path = File.join(directory, 'delphi')
@@ -31,8 +33,10 @@ namespace :win do
 
       unless borland_delphi_home.nil?
         bin_path = File.join(borland_delphi_home, 'bin')
+        lib_path = File.join(borland_delphi_home, 'lib')
 
         ENV['PATH'] ||= ''; ENV['PATH'] = "#{bin_path};#{ENV['PATH']}"
+        ENV['DELPHI_LIB'] = lib_path
       end
     end
 
@@ -42,7 +46,7 @@ namespace :win do
       if args.executable.nil? or not File.exist?(args.executable)
         CLEAN.include('*.o')
 
-        compilation_command = %{dcc32 -cc -$O+ #{args.source}}
+        compilation_command = %{dcc32 -u"#{ENV['DELPHI_LIB']}" -cc -$O+ #{args.source}}
 
         service = Most::SERVICES[:open4]
         service.popen4(compilation_command) do |stdin, stdout, stderr, pid|

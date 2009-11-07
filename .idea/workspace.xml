@@ -4,12 +4,33 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager" verified="true">
-    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="Generic Submissions. Lazy compiler execution.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manifest.txt" afterPath="$PROJECT_DIR$/Manifest.txt" />
+    <list default="true" readonly="true" id="75df97ab-6d94-4e35-9157-938b1bd8bce4" name="Default" comment="Moved to version 0.7.7">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/context.rb" afterPath="$PROJECT_DIR$/lib/most/context.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/problems/time_and_memory_out/cpp/tests.yml" afterPath="$PROJECT_DIR$/samples/problems/time_and_memory_out/cpp/tests.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/erlang.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/erlang.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/helpers/open4.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/starter.rb" afterPath="$PROJECT_DIR$/lib/most/starter.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/most" afterPath="$PROJECT_DIR$/bin/most" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/most/helpers/file.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/kernel.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/kernel.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/run.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/run.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most.rb" afterPath="$PROJECT_DIR$/lib/most.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Bootup.iml" afterPath="$PROJECT_DIR$/.idea/Bootup.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/History.txt" afterPath="$PROJECT_DIR$/History.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/tasks/general/win/delphi.rb" afterPath="$PROJECT_DIR$/lib/most/tasks/general/win/delphi.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/TDA.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/TDA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/string.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/string.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Manifest.txt" afterPath="$PROJECT_DIR$/Manifest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/test_case.rb" afterPath="$PROJECT_DIR$/lib/most/structures/test_case.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cs/main.cs" afterPath="$PROJECT_DIR$/samples/problems/sum_of_numbers/cs/main.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/most.gemspec" afterPath="$PROJECT_DIR$/most.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/box.rb" afterPath="$PROJECT_DIR$/lib/most/structures/box.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/structures/test_runner.rb" afterPath="$PROJECT_DIR$/lib/most/structures/test_runner.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/memory_out.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/memory_out.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Bootup.iml" afterPath="$PROJECT_DIR$/.idea/Bootup.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/submissions/testlib.rb" afterPath="$PROJECT_DIR$/lib/most/submissions/testlib.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/most/helpers/numeric.rb" afterPath="$PROJECT_DIR$/lib/most/helpers/numeric.rb" />
     </list>
     <ignored path="../.idea/" />
     <ignored path="Bootup.iws" />
@@ -30,13 +51,13 @@
   <component name="DisabledGemRequirementsHolder">
     <module name="Bootup">
       <requirement>
-        <dependency name="rubyforge" version="1.0.4" bound="GREATER_OR_EQUAL" />
+        <dependency name="hoe" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <requirement>
         <dependency name="activesupport" version="2.2.2" bound="GREATER_OR_EQUAL" />
       </requirement>
       <requirement>
-        <dependency name="activesupport" version="0" bound="GREATER_OR_EQUAL" />
+        <dependency name="rubyforge" version="1.0.4" bound="GREATER_OR_EQUAL" />
       </requirement>
     </module>
   </component>
@@ -46,37 +67,10 @@
   <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="run.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/run.rb">
+      <file leaf-file-name="hash.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/helpers/hash.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vb.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="48" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testlib.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/submissions/testlib.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="9" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/helpers/array.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,14 +79,23 @@
       <file leaf-file-name="kernel.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/most/helpers/kernel.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="20" column="13" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="context.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/context.rb">
+      <file leaf-file-name="file.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/most/helpers/file.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="65" selection-start="759" selection-end="759" vertical-scroll-proportion="0.2813599">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="most.gemspec" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/most.gemspec">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -100,10 +103,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generic.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
+      <file leaf-file-name="Manifest.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Manifest.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+            <state line="111" column="14" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samples.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/samples.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +124,7 @@
       <file leaf-file-name="most.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/most.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="20" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
+            <state line="42" column="20" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,16 +133,27 @@
       <file leaf-file-name="History.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/History.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+            <state line="11" column="19" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Manifest.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Manifest.txt">
+      <file leaf-file-name="Bootup.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/Bootup.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="16" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.4610123">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1257591984599" expanded="true" signature="567:663" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/most/context.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="135" column="20" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,19 +180,19 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/most/submissions/haskel.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/java.rb" />
-        <option value="$PROJECT_DIR$/lib/most/tasks/general/win/java.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/lisp.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/perl.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/php.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/python.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/ruby.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/lua.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/ocaml.rb" />
+        <option value="$PROJECT_DIR$/lib/most/structures/box.rb" />
+        <option value="$PROJECT_DIR$/lib/most/tasks/general/win/run.rb" />
+        <option value="$PROJECT_DIR$/lib/most/helpers/open4.rb" />
+        <option value="$PROJECT_DIR$/lib/most/tasks/general/win/delphi.rb" />
+        <option value="$PROJECT_DIR$/lib/most/submissions/delphi.rb" />
         <option value="$PROJECT_DIR$/lib/most/submissions/vb.rb" />
-        <option value="$PROJECT_DIR$/lib/most/submissions/pascal.rb" />
         <option value="$PROJECT_DIR$/lib/most/submissions/testlib.rb" />
+        <option value="$PROJECT_DIR$/lib/most/helpers/memory_out.rb" />
+        <option value="$PROJECT_DIR$/lib/most/starter.rb" />
+        <option value="$PROJECT_DIR$/bin/most" />
+        <option value="$PROJECT_DIR$/lib/most/helpers/kernel.rb" />
+        <option value="$PROJECT_DIR$/lib/most/helpers/file.rb" />
+        <option value="$PROJECT_DIR$/lib/most/context.rb" />
         <option value="$PROJECT_DIR$/lib/most.rb" />
         <option value="$PROJECT_DIR$/History.txt" />
         <option value="$PROJECT_DIR$/Manifest.txt" />
@@ -1199,7 +1222,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="180" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
@@ -1213,7 +1236,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.45400593" />
   </component>
-  <component name="RunManager" selected="Rake.install_gem">
+  <component name="RunManager" selected="Rake.manifest">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
@@ -1421,7 +1444,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="release_to_rubyforge" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="VERSION=0.7.6" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="VERSION=0.7.7" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
@@ -1451,7 +1474,7 @@
     <configuration default="false" name="Simple Cpp Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/cpp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/cpp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1467,7 +1490,7 @@
     <configuration default="false" name="Simple Generic Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/cpp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/cpp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1483,7 +1506,7 @@
     <configuration default="false" name="Simple Java Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/java" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/java" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1499,7 +1522,7 @@
     <configuration default="false" name="Simple Python Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/python" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/python" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1513,7 +1536,7 @@
     <configuration default="false" name="Simple PHP Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/php" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/php" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1529,7 +1552,7 @@
     <configuration default="false" name="Simple Ruby Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/ruby" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/ruby" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1545,7 +1568,7 @@
     <configuration default="false" name="Simple Erlang Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/erlang" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/erlang" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1561,7 +1584,7 @@
     <configuration default="false" name="Simple Perl Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/perl" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/perl" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1575,7 +1598,7 @@
     <configuration default="false" name="Simple OCaml Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/ocaml" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/ocaml" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1589,7 +1612,7 @@
     <configuration default="false" name="Simple Lua Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/lua" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/lua" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1603,7 +1626,7 @@
     <configuration default="false" name="Simple Haskell Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/haskell" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/haskell" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1617,7 +1640,7 @@
     <configuration default="false" name="Simple Pascal Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/pascal" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/pascal" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1631,7 +1654,7 @@
     <configuration default="false" name="Simple Lisp Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/lisp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/lisp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1645,7 +1668,7 @@
     <configuration default="false" name="Simple VB Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/vb" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/vb" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1659,7 +1682,7 @@
     <configuration default="false" name="Simple VC# Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/cs" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/cs" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1675,7 +1698,7 @@
     <configuration default="false" name="Simple Delphi Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/delphi" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/delphi" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1691,13 +1714,13 @@
     <configuration default="false" name="Custom Delphi Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/testlib/dates" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/testlib/ones" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/bin/most" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-s testlib -p dates_is.dpr -f result.yml" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="-V -s testlib -p ones_is.dpr -f result.yml" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
@@ -1707,7 +1730,7 @@
     <configuration default="false" name="Simple Brainf Submission" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/sum_of_numbers/brainf" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/sum_of_numbers/brainf" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1751,7 +1774,7 @@
     <configuration default="false" name="Cpp &quot;MemoryOut&quot; Test" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/time_and_memory_out/cpp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/time_and_memory_out/cpp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1767,7 +1790,7 @@
     <configuration default="false" name="Cpp &quot;Timeout&quot; Test" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="Bootup" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="I:/.most/problems/time_and_memory_out/cpp" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="C:/Users/TDA/.most/problems/time_and_memory_out/cpp" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -1870,7 +1893,7 @@
     <option name="DETECT_NESTED_COPIES" value="true" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <configuration useDefault="true">C:\Users\user\AppData\Roaming\Subversion</configuration>
+    <configuration useDefault="true">C:\Users\TDA\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
@@ -1895,22 +1918,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32536975" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32100397" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29809222" sideWeight="0.668942" order="1" side_tool="true" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20028208" sideWeight="0.63672394" order="0" side_tool="false" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23767886" sideWeight="0.6757679" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37252313" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35402906" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37201366" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31626847" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32496697" sideWeight="0.5" order="11" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265074" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="10" side_tool="false" x="11" y="349" width="1258" height="286" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
@@ -1928,7 +1951,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generic Submissions. Lazy compiler execution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved to version 0.7.7" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1963,6 +1986,7 @@
     <MESSAGE value="Corrected .gemspec" />
     <MESSAGE value="Added Borland Delphi Rake task and sample submission, added nifty stdout output" />
     <MESSAGE value="Generic Submissions. Lazy compiler execution." />
+    <MESSAGE value="Moved to version 0.7.7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2022,73 +2046,20 @@
           <url>file://C:/Users/TDA/RubymineProjects/buba/paint.rb</url>
           <line>63</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/most/tasks/general/win/delphi.rb</url>
-          <line>39</line>
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/vb.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/submissions/perl.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+        <state line="32" column="7" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/haskell.rb">
+    <entry file="file://$PROJECT_DIR$/bin/most">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/lua.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/ocaml.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/pascal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="46" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/pascal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="7" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/run.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/tasks/general/win/vb.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="48" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/testlib.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="9" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0">
+        <state line="24" column="21" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -2100,44 +2071,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/helpers/kernel.rb">
+    <entry file="file://$PROJECT_DIR$/lib/most/helpers/memory_out.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/helpers/numeric.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/helpers/kernel.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/file.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/helpers/hash.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/most/context.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="135" column="20" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/most/submissions/generic.rb">
+    <entry file="file://$PROJECT_DIR$/tasks/samples.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/most.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="20" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
+        <state line="42" column="20" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/History.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+        <state line="11" column="19" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/Bootup.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1257591984599" expanded="true" signature="567:663" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/most.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Manifest.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="16" selection-start="2021" selection-end="2021" vertical-scroll-proportion="0.4610123">
+        <state line="111" column="14" selection-start="3822" selection-end="3822" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/most/helpers/file.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="65" selection-start="759" selection-end="759" vertical-scroll-proportion="0.2813599">
           <folding />
         </state>
       </provider>
